@@ -37,9 +37,14 @@ async function doLogin() {
 }
 document.getElementById('li-pass').addEventListener('keydown', (e) => { if (e.key === 'Enter') doLogin(); });
 
-function enter() {
+async function enter() {
   document.getElementById('login').style.display = 'none';
   document.getElementById('app').style.display = 'flex';
+  // 拉一次设置，判断本服务是否内置授权模块（源码版 license.available=false 时隐藏授权页）
+  try {
+    const d = await API.call('GET', '/api/admin/settings');
+    window.__licenseAvail = !!(d.license && d.license.available);
+  } catch { window.__licenseAvail = false; }
   renderNav();
   route(location.hash || '#dashboard');
 }
@@ -87,6 +92,7 @@ const pages = [
   ['audit', '审计日志', renderAudit],
   ['templates', '实例模板', renderTemplates],
   ['users', '用户管理', renderUsers],
+  ['license', '授权管理', renderLicense],
   ['settings', '系统设置', renderSettings],
 ];
 
@@ -94,6 +100,7 @@ function renderNav() {
   const nav = document.getElementById('nav');
   nav.innerHTML = '';
   for (const [id, label] of pages) {
+    if (id === 'license' && !window.__licenseAvail) continue; // 源码版无授权模块：隐藏
     const a = document.createElement('a');
     a.innerHTML = (ICONS[id] || '') + '<span>' + label + '</span>';
     a.dataset.page = id;
@@ -896,6 +903,58 @@ async function saveSettings() {
     gpuProbeCmd: document.getElementById('s-probecmd').value.trim(),
   });
   toast('已保存');
+}
+
+/* ---------------- 授权管理（部署包内置；源码版自动隐藏） ---------------- */
+
+async function renderLicense() {
+  const d = await API.call('GET', '/api/admin/license');
+  const l = d.license || {};
+  let statusBadge, statusText;
+  if (!l.available) {
+    statusBadge = badge('源码版', 'muted');
+    statusText = '本服务为源码版（未内置授权模块），不限制实例数。如需授权开关请使用作者发布的部署包。';
+  } else if (!l.enabled) {
+    statusBadge = badge('已关闭', 'warn');
+    statusText = '授权验证已关闭：当前不限制实例数（仅作者自用/交付测试，正式交付应保持开启）。';
+  } else if (l.valid) {
+    statusBadge = badge('有效', 'ok');
+    statusText = `已授权 · 档位=${l.edition} · 实例上限=${l.max}`
+      + (l.exp ? ` · 到期=${new Date(l.exp).toLocaleString()}` : ' · 永久')
+      + (l.to ? ` · 对象=${l.to}` : '');
+  } else {
+    statusBadge = badge('未授权', 'err');
+    statusText = `未授权（${l.reason}）· 评估模式（最多 1 个并发实例）。把作者签发的 Token 粘贴到下方并保存。`;
+  }
+  main().innerHTML = `
+  <h2 class="page">授权管理</h2>
+  <div class="card">
+    <h3>授权状态</h3>
+    <p>${statusBadge} ${esc(statusText)}</p>
+    <label style="display:flex;align-items:center;gap:8px;margin:10px 0">
+      <input id="lic-enabled" type="checkbox" ${l.enabled ? 'checked' : ''} style="width:auto">
+      启用授权验证（关闭后将不限制实例数，仅用于测试 / 交付前的作者自用）
+    </label>
+    <label>授权密钥 (License Token)</label>
+    <textarea id="lic-token" rows="4" placeholder="把作者签发的 Token 整行粘贴到这里">${esc(l.token || '')}</textarea>
+    <span class="hint">Token 由作者通过「License 签发工具」生成（图形界面 exe）。粘贴后点「保存并验证」。
+    无有效 Token 时平台以评估模式运行（最多 1 实例），购买后作者签发对应档位/实例数的 Token 即可解除限制。</span>
+    <div class="actions">
+      <button onclick="saveLicense()">保存并验证</button>
+    </div>
+  </div>`;
+}
+
+async function saveLicense() {
+  const enabled = document.getElementById('lic-enabled').checked;
+  const token = document.getElementById('lic-token').value.trim();
+  try {
+    const r = await API.call('PUT', '/api/admin/license', { enabled, token });
+    if (r.ok && r.license && r.license.valid) toast('授权已生效：' + (r.license.edition || '') + ' / 上限 ' + r.license.max);
+    else if (r.ok) toast('已保存（当前未授权 / 评估模式）', 'warn');
+    else toast('保存失败', 'err');
+    renderLicense();
+  } catch (e) { toast('保存失败: ' + e.message, 'err'); }
 }
 
 /* ---------------- 启动 ---------------- */

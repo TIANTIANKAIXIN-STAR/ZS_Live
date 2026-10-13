@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>LicenseTool</AssemblyName>
+    <AssemblyTitle>ZS Live 授权签发工具</AssemblyTitle>
+    <Description>作者自用：RSA 非对称签发/验证 License Token（仅放私有仓库）</Description>
+    <RootNamespace>LicenseTool</RootNamespace>
+  </PropertyGroup>
+</Project>

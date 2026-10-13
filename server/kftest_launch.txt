@@ -1,0 +1,207 @@
+LogIoDispatcher: Display: Reading toc: ../../../UEtest/Content/Paks/global.utoc
+LogIoDispatcher: Display: Toc loaded : ../../../UEtest/Content/Paks/global.utoc, Id=ffffffffffffffff, Order=0, EntryCount=1, SignatureHash=0000000000000000000000000000000000000000
+LogIoDispatcher: Display: Mounting container '../../../UEtest/Content/Paks/global.utoc' in location slot 0
+LogPakFile: Display: Initialized I/O dispatcher file backend. Mounted the global container: ../../../UEtest/Content/Paks/global.utoc
+LogPakFile: Display: Found Pak file ../../../UEtest/Content/Paks/UEtest-Windows.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../UEtest/Content/Paks/UEtest-Windows.pak.
+LogIoDispatcher: Display: Reading toc: ../../../UEtest/Content/Paks/UEtest-Windows.utoc
+LogIoDispatcher: Display: Toc loaded : ../../../UEtest/Content/Paks/UEtest-Windows.utoc, Id=147082de50537c95, Order=4, EntryCount=2183, SignatureHash=0000000000000000000000000000000000000000
+LogIoDispatcher: Display: Mounting container '../../../UEtest/Content/Paks/UEtest-Windows.utoc' in location slot 0
+LogPakFile: Display: Mounted IoStore container "../../../UEtest/Content/Paks/UEtest-Windows.utoc"
+LogPakFile: Display: Mounted Pak file '../../../UEtest/Content/Paks/UEtest-Windows.pak', mount point: '../../../'
+LogCsvProfiler: Display: Metadata set : systemresolution.resx="1280"
+LogCsvProfiler: Display: Metadata set : systemresolution.resy="720"
+LogAudio: Display: Pre-Initializing Audio Device Manager...
+LogAudio: Display: AudioInfo: 'OPUS' Registered
+LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+LogAudio: Display: AudioInfo: 'OGG' Registered
+LogAudio: Display: AudioInfo: 'ADPCM' Registered
+LogAudio: Display: AudioInfo: 'PCM' Registered
+LogAudio: Display: AudioInfo: 'BINKA' Registered
+LogAudio: Display: AudioInfo: 'RADA' Registered
+LogAudio: Display: Audio Device Manager Pre-Initialized
+RenderDocPlugin: Display: RenderDoc plugin will not be loaded. Use '-AttachRenderDoc' on the cmd line or enable 'renderdoc.AutoAttach' in the plugin settings.
+LogCUDA: Display: CUDA module ready pending PostEngineInit.
+LogHAL: Display: Platform has ~ 128 GB [137165344768 / 137438953472 / 128], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+LogCsvProfiler: Display: Metadata set : extradevelopmentmemorymb="0"
+LogWindowsTouchpad: Display: CacheForceMaxTouchpadSensitivityMode SetTouchpadParameters
+LogObj: Display: Attempting to load config data for Default__SlateThemeManager before the Class has been constructed/registered/linked (likely during module loading or early startup). This will result in the load silently failing and should be fixed.
+LogD3D12RHI: Display: Creating D3D12 RHI with Max Feature Level SM6
+LogD3D12RHI: Display: Not using pipeline state disk cache per r.D3D12.PSO.DiskCache=0
+LogD3D12RHI: Display: Not using driver-optimized pipeline state disk cache per r.D3D12.PSO.DriverOptimizedDiskCache=0
+LogCsvProfiler: Display: Metadata set : verbatimrhiname="D3D12"
+LogCsvProfiler: Display: Metadata set : rhiname="D3D12"
+LogCsvProfiler: Display: Metadata set : rhifeaturelevel="SM6"
+LogCsvProfiler: Display: Metadata set : shaderplatform="PCD3D_SM6"
+LogShaderLibrary: Display: Using IoDispatcher for shader code library Global. Total 13090 unique shaders.
+LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library Global
+LogShaderLibrary: Display: Logical shader library 'Global' has been created as a monolithic library
+LogTemp: Display: Clearing the OS Cache
+LogStreaming: Warning: Failed to read file '../../../Engine/Content/Slate/Old/Notification_Border_Flash.png' error.
+LogStreaming: Warning: Failed to read file '../../../Engine/Content/Slate/Icons/notificationlist_fail.png' error.
+LogStreaming: Warning: Failed to read file '../../../Engine/Content/Slate/Icons/notificationlist_success.png' error.
+LogShaderLibrary: Display: Using IoDispatcher for shader code library UEtest. Total 2185 unique shaders.
+LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library UEtest
+LogShaderLibrary: Display: Logical shader library 'UEtest' has been created as a monolithic library
+LogShaderLibrary: Display: Tried to open again shader library 'UEtest', but could not find new components for it (existing components: 1).
+LogDeviceProfileManager: Display: Deviceprofile LinuxArm64Editor not found.
+LogDeviceProfileManager: Display: Deviceprofile LinuxArm64 not found.
+LogCsvProfiler: Display: Metadata set : deviceprofile="Windows"
+LogStreaming: Display: FlushAsyncLoading(1): 1 QueuedPackages, 0 AsyncPackages
+LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+LogMetaSound: Display: MetaSound Page Target Initialized to 'Default'
+LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+LogAudio: Display: Registering Engine Module Parameter Interfaces...
+LogAudio: Display: Initializing Audio Device Manager...
+LogAudio: Display: Loading Default Audio Settings Objects...
+LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+LogAudio: Display: Audio Device Manager Initialized
+LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+LogAudioMixer: Display: Audio Mixer Platform Settings:
+LogAudioMixer: Display: 	Sample Rate:						  48000
+LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+LogAudioMixer: Display: 	Number of buffers to queue:			  1
+LogAudioMixer: Display: 	Max Channels (voices):				  32
+LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+LogAudio: Display: AudioDevice MaxSources: 32
+LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+LogAudio: Display: Audio Reverb Plugin: None (built-in).
+LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+LogAudioEnumeration: Display: FWindowsMMDeviceCache: Default Render Role='Console', Device='??? (USB Audio Device)'
+LogAudioEnumeration: Display: FWindowsMMDeviceCache: Default Capture Role='Console', Device='Microphone (USB Audio Device)'
+LogAudioEnumeration: Display: FWindowsMMDeviceCache: Default Render Role='Multimedia', Device='??? (USB Audio Device)'
+LogAudioEnumeration: Display: FWindowsMMDeviceCache: Default Capture Role='Multimedia', Device='Microphone (USB Audio Device)'
+LogAudioEnumeration: Display: FWindowsMMDeviceCache: Default Render Role='Communications', Device='??? (USB Audio Device)'
+LogAudioEnumeration: Display: FWindowsMMDeviceCache: Default Capture Role='Communications', Device='Microphone (USB Audio Device)'
+LogAudioMixer: Display: Using Audio Hardware Device ??? (USB Audio Device)
+LogAudioMixer: Display: Initializing Sound Submixes...
+LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=1
+LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+LogInit: Display: Game Engine Initialized.
+LogStreamForge: Error: [Video] No encoders registered. Enable the 'HardwareEncoders' plugin (EncoderNVENC/EncoderAMF).
+LogStreamForge: Error: Video pipeline failed to initialize
+LogCUDA: Display: Initialising CUDA API...
+LogCUDA: Display: CUDA API initialised successfully.
+LogCUDA: Display: Found 1 CUDA capable devices.
+LogCUDA: Display: Found device 0 called "NVIDIA GeForce RTX 4090".
+LogCUDA: Display: Attempting to create CUDA context on GPU Device 0...
+LogCUDA: Display: Created CUDA context on device "NVIDIA GeForce RTX 4090".
+LogInit: Display: Starting Game.
+LogAudio: Display: Audio Device unregistered from world 'None'.
+LogAudio: Display: Audio Device (ID: 1) registered with world 'OpenWorld'.
+LogWorldPartition: Display: WorldPartition initialize started...
+LogWorldPartition: Display: WorldPartition initialize took 108 us
+LogShaderLibrary: Warning: Spent 3.70 ms in a blocking wait for shader preload, NumRefs: 35, FramePreloadStarted: 1, CurrentFrame: 1
+LogShaderLibrary: Warning: Spent 3.70 ms in a blocking wait for shader preload, NumRefs: 35, FramePreloadStarted: 1, CurrentFrame: 1
+LogShaderLibrary: Warning: Spent 3.50 ms in a blocking wait for shader preload, NumRefs: 35, FramePreloadStarted: 1, CurrentFrame: 1
+LogShaderLibrary: Warning: Spent 3.53 ms in a blocking wait for shader preload, NumRefs: 35, FramePreloadStarted: 1, CurrentFrame: 1
+LogShaderLibrary: Warning: Spent 3.49 ms in a blocking wait for shader preload, NumRefs: 35, FramePreloadStarted: 1, CurrentFrame: 1
+LogShaderLibrary: Warning: Spent 3.42 ms in a blocking wait for shader preload, NumRefs: 35, FramePreloadStarted: 1, CurrentFrame: 1
+LogShaderLibrary: Warning: Spent 3.38 ms in a blocking wait for shader preload, NumRefs: 35, FramePreloadStarted: 1, CurrentFrame: 1
+LogShaderLibrary: Warning: Spent 3.55 ms in a blocking wait for shader preload, NumRefs: 35, FramePreloadStarted: 1, CurrentFrame: 1
+LogShaderLibrary: Warning: Spent 3.41 ms in a blocking wait for shader preload, NumRefs: 35, FramePreloadStarted: 1, CurrentFrame: 1
+LogShaderLibrary: Warning: Spent 3.37 ms in a blocking wait for shader preload, NumRefs: 35, FramePreloadStarted: 1, CurrentFrame: 1
+LogRHI: Display: Encountered a new graphics PSO: 2134866024
+LogRHI: Display: ShaderPipelineCache: Paused Batching. 1
+LogRHI: Display: ShaderPipelineCache: Resumed Batching. 0
+LogRHI: Display: ShaderPipelineCache: Batching Resumed.
+LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+LogCsvProfiler: Display: Metadata set : streamingpoolsizemb="1000"
+LogTrace: Display: Control listening on port 38916
+LogRHI: Display: Encountered a new graphics PSO: 3677113228
+LogRHI: Display: Encountered a new graphics PSO: 1315878622
+LogRHI: Display: Encountered a new graphics PSO: 569680169
+LogRHI: Display: Encountered a new graphics PSO: 2746025581
+LogRHI: Display: Encountered a new graphics PSO: 2302200326
+LogRHI: Display: Encountered a new compute PSO: 1169135898
+LogRHI: Display: Encountered a new graphics PSO: 2800702753
+LogRHI: Display: Encountered a new graphics PSO: 3559761228
+LogRHI: Display: Encountered a new graphics PSO: 2639585619
+LogRHI: Display: Encountered a new graphics PSO: 1253541765
+LogRHI: Display: Encountered a new compute PSO: 2164177633
+LogRHI: Display: Encountered a new compute PSO: 1753340302
+LogRHI: Display: Encountered a new graphics PSO: 276314573
+LogRHI: Display: Encountered a new graphics PSO: 523699182
+LogRHI: Display: Encountered a new graphics PSO: 3695969077
+LogRHI: Display: Encountered a new graphics PSO: 2370133464
+LogRHI: Display: Encountered a new graphics PSO: 3563141089
+LogRHI: Display: Encountered a new graphics PSO: 3907711503
+LogRHI: Display: Encountered a new graphics PSO: 345577987
+LogRHI: Display: Encountered a new graphics PSO: 3939745022
+LogRHI: Display: Encountered a new graphics PSO: 997718106
+LogRHI: Display: Encountered a new graphics PSO: 333001507
+LogRHI: Display: Encountered a new graphics PSO: 2175913705
+LogRHI: Display: Encountered a new graphics PSO: 1142913761
+LogRHI: Display: Encountered a new graphics PSO: 1469201926
+LogRHI: Display: Encountered a new graphics PSO: 1717391115
+LogRHI: Display: Encountered a new graphics PSO: 1820791236
+LogRHI: Display: Encountered a new graphics PSO: 97087726
+LogRHI: Display: Encountered a new graphics PSO: 317088521
+LogRHI: Display: Encountered a new graphics PSO: 3683995255
+LogRHI: Display: Encountered a new graphics PSO: 4060824594
+LogRHI: Display: Encountered a new graphics PSO: 2222421403
+LogRHI: Display: Encountered a new graphics PSO: 3563740844
+LogRHI: Display: Encountered a new graphics PSO: 2329905407
+LogRHI: Display: Encountered a new graphics PSO: 3406398192
+LogRHI: Display: Encountered a new graphics PSO: 3693515031
+LogRHI: Display: Encountered a new graphics PSO: 1207449624
+LogRHI: Display: Encountered a new graphics PSO: 1402213197
+LogRHI: Display: Encountered a new graphics PSO: 3522687472
+LogRHI: Display: Encountered a new graphics PSO: 605245152
+LogRHI: Display: Encountered a new graphics PSO: 2722620378
+LogRHI: Display: Encountered a new graphics PSO: 357940329
+LogRHI: Display: Encountered a new graphics PSO: 3709452605
+LogRHI: Display: Encountered a new graphics PSO: 3567388513
+LogRHI: Display: Encountered a new graphics PSO: 3610167418
+LogRHI: Display: Encountered a new graphics PSO: 3267262678
+LogRHI: Display: Encountered a new graphics PSO: 2671929825
+LogRHI: Display: Encountered a new graphics PSO: 4209299837
+LogRHI: Display: Encountered a new graphics PSO: 3762740916
+LogRHI: Display: Encountered a new graphics PSO: 3489666494
+LogAudioMixer: Display: Sending SubmixBufferListener 'Unset' register command...
+LogAudioMixer: Display: Submix buffer listener 'Unset' registered with submix 'MasterSubmixDefault'
+LogWebSockets: Warning: Lws(Warning): lws_client_handshake: got bad HTTP response '401' 
+LogStreamForge: Warning: [Agent] Connect error: HS: ws upgrade unauthorized
+LogRHI: Display: Encountered a new graphics PSO: 2418343817
+LogStreamForge: Warning: [RTMP] Connection lost, reconnecting...
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 1000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 2000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 4000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 8000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogRHI: Display: Encountered a new graphics PSO: 2363581576
+LogRHI: Display: Encountered a new graphics PSO: 863310323
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms
+LogStreamForge: Warning: [RTMP] TCP connect failed, retry in 10000 ms

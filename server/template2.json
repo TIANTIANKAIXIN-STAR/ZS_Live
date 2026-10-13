@@ -1,0 +1,11 @@
+{
+  "name": "UEtest 5.7 打包版",
+  "exe_path": "F:\\streamming\\ZS_Live\\UETest\\Package\\Windows\\UEtest.exe",
+  "args": "-windowed -ResX=1280 -ResY=720 -log",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "bitrate_kbps": 4000,
+  "audio_codec": "pcma",
+  "enable_input": 1
+}

@@ -1,0 +1,7 @@
+﻿
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\StreamForgeModule.cpp(210,5): error C2653: “FTSTickerDelegate”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\StreamForgeModule.cpp(210,24): error C3861: “CreateLambda”: 找不到标识符
+Result: Failed (OtherCompilationError)
+
+
+

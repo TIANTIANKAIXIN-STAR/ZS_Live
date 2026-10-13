@@ -1,0 +1,164 @@
+[2026-09-04 03:11:50.846] [INFO ] ========================================================
+[2026-09-04 03:11:50.847] [INFO ]   ZS Live 调度服务已启动
+[2026-09-04 03:11:50.847] [INFO ]   观看页:   http://10.3.18.189:3100/
+[2026-09-04 03:11:50.847] [INFO ]   管理后台: http://10.3.18.189:3100/admin
+[2026-09-04 03:11:50.847] [INFO ]   WHEP:     http://10.3.18.189:8890/zslive/<instanceId>/whep
+[2026-09-04 03:11:50.847] [INFO ]   MediaMTX: rtmp://10.3.18.189:1935/zslive/<instanceId>
+[2026-09-04 03:11:50.847] [INFO ] ========================================================
+[2026-09-04 03:12:05.847] [INFO ] [Pool] 启动实例 inst_mtmdodee4028a9b6 (UEtest 5.7 编辑器游戏模式): C:\Program Files\Epic Games\UE_5.7\Engine\Binaries\Win64\UnrealEditor.exe "F:\streamming\ZS_Live\UETest\UEtest\UEtest.uproject" -game -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmdodee4028a9b6 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmdodee4028a9b6 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=248547c9616321e27453c4c25b282b5612b9507774abeab7f13a76250baad6d3 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 03:12:05.858] [INFO ] [Pool] 预热新实例 (free=0, warm=1)
+[2026-09-04 03:12:16.530] [INFO ] [Pool] 启动实例 inst_mtmdoln6398238e3 (UEtest 5.7 编辑器游戏模式): C:\Program Files\Epic Games\UE_5.7\Engine\Binaries\Win64\UnrealEditor.exe "F:\streamming\ZS_Live\UETest\UEtest\UEtest.uproject" -game -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmdoln6398238e3 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmdoln6398238e3 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=cf51ab74b430a5561f44715c596488748c9dacdec08c5d7e9db27234df569958 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 03:12:16.549] [INFO ] [Hub] 浏览器会话 sess_mtmdoln5554efde8 接入
+[2026-09-04 03:12:20.846] [WARN ] [Sweep] 实例 inst_mtmdoln6398238e3 agent 心跳丢失
+[2026-09-04 03:12:30.793] [INFO ] [Hub] UE 实例 inst_mtmdodee4028a9b6 agent 接入
+[2026-09-04 03:12:30.796] [INFO ] [Pool] 实例 inst_mtmdodee4028a9b6 就绪 (pid=15144 platform=Windows)
+[2026-09-04 03:12:31.052] [INFO ] [Hub] UE 实例 inst_mtmdoln6398238e3 agent 接入
+[2026-09-04 03:12:31.054] [INFO ] [Pool] 实例 inst_mtmdoln6398238e3 就绪 (pid=37096 platform=Windows)
+[2026-09-04 03:14:41.572] [INFO ] [Pool] 停止实例 inst_mtmdodee4028a9b6 (admin)
+[2026-09-04 03:14:42.601] [INFO ] [Hub] UE 实例 inst_mtmdodee4028a9b6 agent 断开
+[2026-09-04 03:14:44.625] [INFO ] [Pool] 实例 inst_mtmdodee4028a9b6 退出 (code=0, state=stopping)
+[2026-09-04 03:14:46.559] [INFO ] [Hub] 浏览器会话 sess_mtmdoln5554efde8 断开
+[2026-09-04 03:14:50.933] [INFO ] [Pool] 启动实例 inst_mtmdrws464908833 (UEtest 5.7 编辑器游戏模式): C:\Program Files\Epic Games\UE_5.7\Engine\Binaries\Win64\UnrealEditor.exe "F:\streamming\ZS_Live\UETest\UEtest\UEtest.uproject" -game -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmdrws464908833 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmdrws464908833 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=c72b2adfe3b452a98bf2e975462dcdbf24f732e084714e7bf0361ea3eba7bc94 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 03:14:50.942] [INFO ] [Pool] 预热新实例 (free=0, warm=1)
+[2026-09-04 03:14:56.562] [INFO ] [Session] sess_mtmdoln5554efde8 结束 (browser_closed)
+[2026-09-04 03:15:06.216] [INFO ] [Hub] UE 实例 inst_mtmdrws464908833 agent 接入
+[2026-09-04 03:15:06.219] [INFO ] [Pool] 实例 inst_mtmdrws464908833 就绪 (pid=23540 platform=Windows)
+[2026-09-04 03:19:51.100] [INFO ] [Pool] 实例 inst_mtmdrws464908833 空闲超时回收
+[2026-09-04 03:19:51.101] [INFO ] [Pool] 停止实例 inst_mtmdrws464908833 (idle_timeout)
+[2026-09-04 03:19:52.168] [INFO ] [Hub] UE 实例 inst_mtmdrws464908833 agent 断开
+[2026-09-04 03:19:54.186] [INFO ] [Pool] 实例 inst_mtmdrws464908833 退出 (code=0, state=stopping)
+[2026-09-04 03:20:06.105] [INFO ] [Pool] 实例 inst_mtmdoln6398238e3 空闲超时回收
+[2026-09-04 03:20:06.105] [INFO ] [Pool] 停止实例 inst_mtmdoln6398238e3 (idle_timeout)
+[2026-09-04 03:20:06.106] [INFO ] [Pool] 启动实例 inst_mtmdynyy69f12fb1 (UEtest 5.7 编辑器游戏模式): C:\Program Files\Epic Games\UE_5.7\Engine\Binaries\Win64\UnrealEditor.exe "F:\streamming\ZS_Live\UETest\UEtest\UEtest.uproject" -game -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmdynyy69f12fb1 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmdynyy69f12fb1 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=1177df6e6001f97df27eccfe13b614d44d25044da7172ddd7da628feed278454 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 03:20:06.123] [INFO ] [Pool] 预热新实例 (free=0, warm=1)
+[2026-09-04 03:20:07.149] [INFO ] [Hub] UE 实例 inst_mtmdoln6398238e3 agent 断开
+[2026-09-04 03:20:09.134] [INFO ] [Pool] 实例 inst_mtmdoln6398238e3 退出 (code=0, state=stopping)
+[2026-09-04 03:20:33.558] [INFO ] [Hub] UE 实例 inst_mtmdynyy69f12fb1 agent 接入
+[2026-09-04 03:20:33.560] [INFO ] [Pool] 实例 inst_mtmdynyy69f12fb1 就绪 (pid=57160 platform=Windows)
+[2026-09-04 03:21:56.368] [INFO ] [Pool] 停止实例 inst_mtmdynyy69f12fb1 (admin)
+[2026-09-04 03:21:57.391] [INFO ] [Hub] UE 实例 inst_mtmdynyy69f12fb1 agent 断开
+[2026-09-04 03:21:59.317] [INFO ] [Pool] 实例 inst_mtmdynyy69f12fb1 退出 (code=0, state=stopping)
+[2026-09-04 03:22:19.216] [INFO ] [Pool] 启动实例 inst_mtme1iogd402fb79 (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtme1iogd402fb79 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtme1iogd402fb79 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=0318777ec9ed87fac200a406f1ad3ff14c5c49bbf832ea51dc235d0b7a55ee54 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 03:22:21.158] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:22:36.169] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:22:51.182] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:23:06.185] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:23:21.192] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:23:36.194] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:23:51.201] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:24:06.202] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:24:21.203] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:24:36.208] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:24:51.209] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:25:06.221] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:25:21.223] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:25:36.236] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:25:51.242] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:26:06.245] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:26:21.248] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:26:36.248] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:26:51.259] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:27:06.261] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:27:21.269] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:27:36.273] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:27:51.284] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:28:06.295] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:28:21.302] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:28:36.309] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:28:51.314] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:29:06.314] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:29:21.315] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:29:36.326] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:29:51.340] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:30:06.345] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:30:21.348] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:30:36.359] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:30:51.363] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:31:06.363] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:31:21.376] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:31:36.386] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:31:51.388] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:32:06.393] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:32:21.394] [WARN ] [Sweep] 实例 inst_mtme1iogd402fb79 agent 心跳丢失
+[2026-09-04 03:32:24.352] [INFO ] [Session] sess_mtme1iog326761e9 结束 (admin_kill)
+[2026-09-04 03:32:24.352] [INFO ] [Pool] 停止实例 inst_mtme1iogd402fb79 (admin)
+[2026-09-04 03:32:24.777] [INFO ] [Pool] 实例 inst_mtme1iogd402fb79 退出 (code=1, state=stopping)
+[2026-09-04 03:32:28.084] [INFO ] [Pool] 启动实例 inst_mtmeekhgad562c79 (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmeekhgad562c79 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmeekhgad562c79 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=adc14f055ed2e7c3cf3189d4f98d5ceee58b2c7e7a08503c9b96184e99bc6264 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 03:32:36.403] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:32:51.406] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:33:06.416] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:33:21.424] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:33:36.427] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:33:51.434] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:34:06.438] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:34:21.445] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:34:36.450] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:34:51.450] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:35:06.460] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:35:21.474] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:35:36.485] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:35:51.490] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:36:06.494] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:36:21.496] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:36:36.505] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:36:51.510] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:37:06.514] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:37:21.515] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:37:36.523] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:37:51.538] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:38:06.551] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:38:21.565] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:38:36.565] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:38:51.577] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:39:06.580] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:39:21.592] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:39:36.594] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:39:51.598] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:40:06.601] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:40:21.611] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:40:36.616] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:40:51.628] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:41:06.639] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:41:21.640] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:41:36.646] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:41:51.651] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:42:06.666] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:42:21.671] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:42:36.685] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:42:51.688] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:43:06.695] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:43:21.699] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:43:36.712] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:43:51.715] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:44:06.720] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:44:21.726] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:44:36.734] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:44:51.745] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:45:06.750] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:45:21.756] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:45:36.768] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:45:51.777] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:46:06.786] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:46:21.788] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:46:36.802] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:46:51.806] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:47:06.820] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:47:21.827] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:47:36.834] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:47:51.843] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:48:06.857] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:48:21.866] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:48:36.876] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:48:51.883] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:49:06.895] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:49:21.896] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:49:36.904] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:49:51.906] [WARN ] [Sweep] 实例 inst_mtmeekhgad562c79 agent 心跳丢失
+[2026-09-04 03:49:55.633] [INFO ] [Session] sess_mtmeekhf0208b15e 结束 (user_release)
+[2026-09-04 03:49:56.357] [INFO ] [Pool] 停止实例 inst_mtmeekhgad562c79 (admin)
+[2026-09-04 03:49:56.793] [INFO ] [Pool] 实例 inst_mtmeekhgad562c79 退出 (code=1, state=stopping)
+[2026-09-04 03:51:35.143] [INFO ] [Pool] 启动实例 inst_mtmf35k763dfd0d3 (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmf35k763dfd0d3 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmf35k763dfd0d3 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=d7128a89ff69dc1e3877a256ab54ced7dcc83da83885f4048089241c23dd42a2 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 03:51:36.961] [WARN ] [Sweep] 实例 inst_mtmf35k763dfd0d3 agent 心跳丢失
+[2026-09-04 03:51:39.240] [INFO ] [Hub] UE 实例 inst_mtmf35k763dfd0d3 agent 接入
+[2026-09-04 03:51:39.241] [INFO ] [Pool] 实例 inst_mtmf35k763dfd0d3 就绪 (pid=29316 platform=Windows)
+[2026-09-04 04:01:56.071] [INFO ] [Pool] 启动实例 inst_mtmfggo72625e1de (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmfggo72625e1de -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmfggo72625e1de -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=7e045462fe4098ed25e168070c4d818253f8c8b2f67bbb0a2a56535522388019 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1

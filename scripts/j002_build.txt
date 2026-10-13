@@ -1,0 +1,7 @@
+﻿[5/5] WriteMetadata J002.target
+
+Total time in Parallel executor: 13.11 seconds
+
+Result: Succeeded
+Total execution time: 17.16 seconds
+

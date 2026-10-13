@@ -1,0 +1,100 @@
+Running AutomationTool...
+Using bundled DotNet SDK version: 8.0.412 win-x64
+Starting AutomationTool...
+Parsing command line: BuildCookRun -project=F:/streamming/ZS_Live/UETest/UEtest/UEtest.uproject -platform=Win64 -configuration=Development -build -stage -pak -compressed -archive -archivedirectory=F:/streamming/ZS_Live/UETest/Package -skipcook -NoUBA -nosplash -unattended
+Initializing script modules...
+Total script module initialization time: 0.41 s.
+Using C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe
+Executing commands...
+Setting up ProjectParams for F:\streamming\ZS_Live\UETest\UEtest\UEtest.uproject
+********** BUILD COMMAND STARTED **********
+Running: C:\Program Files\Epic Games\UE_5.7\Engine\Binaries\ThirdParty\DotNet\8.0.412\win-x64\dotnet.exe "C:\Program Files\Epic Games\UE_5.7\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -Target="UEtestEditor Win64 Development -Project=F:\streamming\ZS_Live\UETest\UEtest\UEtest.uproject" -Target="UEtest Win64 Development -Project=F:\streamming\ZS_Live\UETest\UEtest\UEtest.uproject  -remoteini=\"F:\streamming\ZS_Live\UETest\UEtest\"  " -log="C:\Users\Administrator\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.7\UBA-UEtestEditor-Win64-Development.txt"
+Log file: C:\Users\Administrator\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.7\UBA-UEtestEditor-Win64-Development.txt
+Creating makefile for UEtest (command line arguments changed)
+Warning: Plugin 'StreamForge' does not list plugin 'HardwareEncoders' as a dependency, but module 'StreamForge' depends on module 'EncoderNVENC'.
+Warning: Plugin 'StreamForge' does not list plugin 'HardwareEncoders' as a dependency, but module 'StreamForge' depends on module 'EncoderAMF'.
+UHT compiled-in object format Default
+Building UEtestEditor and UEtest...
+UEtestEditor: Using Visual Studio 2022 14.44.35227 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+UEtestEditor: [Adaptive Build] Excluded from StreamForge unity file: SFAmf0.cpp, SFAudioPipeline.cpp, SFControlChannel.cpp, SFMediaFormat.cpp, SFRtmpPusher.cpp, SFVideoPipeline.cpp, StreamForgeModule.cpp, StreamForgeSubsystem.cpp
+UEtest: Using Visual Studio 2022 14.44.35227 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+UEtest: [Adaptive Build] Excluded from StreamForge unity file: SFAmf0.cpp, SFAudioPipeline.cpp, SFControlChannel.cpp, SFMediaFormat.cpp, SFRtmpPusher.cpp, SFVideoPipeline.cpp, StreamForgeModule.cpp, StreamForgeSubsystem.cpp
+Determining max actions to execute in parallel (20 physical cores, 28 logical cores)
+  Executing up to 20 processes, one per physical core
+Using Unreal Build Accelerator local executor to run 18 action(s)
+  Storage capacity 40Gb
+---- Starting trace: 260904_145929 ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+** For UEtest-Win64-Development **
+ Compile [x64] StreamForgeModule.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] StreamForgeModule.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+[1/18] Compile [x64] StreamForgeModule.cpp
+ Compile [x64] StreamForgeModule.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealGame/Development/StreamForge/StreamForgeModule.cpp.obj.rsp"
+** For UEtestEditor-Win64-Development **
+ Compile [x64] StreamForgeSubsystem.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] StreamForgeSubsystem.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+ Compile [x64] StreamForgeSubsystem.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/StreamForgeSubsystem.cpp.obj.rsp"
+[2/18] Compile [x64] StreamForgeSubsystem.cpp
+** For UEtest-Win64-Development **
+ Compile [x64] SFControlChannel.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] SFControlChannel.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+[3/18] Compile [x64] SFControlChannel.cpp
+ Compile [x64] SFControlChannel.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealGame/Development/StreamForge/SFControlChannel.cpp.obj.rsp"
+** For UEtestEditor-Win64-Development **
+ Compile [x64] SFMediaFormat.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] SFMediaFormat.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+ Compile [x64] SFMediaFormat.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/SFMediaFormat.cpp.obj.rsp"
+[4/18] Compile [x64] SFMediaFormat.cpp
+ Compile [x64] StreamForgeModule.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] StreamForgeModule.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+ Compile [x64] StreamForgeModule.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/StreamForgeModule.cpp.obj.rsp"
+[5/18] Compile [x64] StreamForgeModule.cpp
+ Compile [x64] SFRtmpPusher.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] SFRtmpPusher.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+[6/18] Compile [x64] SFRtmpPusher.cpp
+ Compile [x64] SFRtmpPusher.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/SFRtmpPusher.cpp.obj.rsp"
+** For UEtest-Win64-Development **
+ Compile [x64] SFRtmpPusher.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] SFRtmpPusher.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+[7/18] Compile [x64] SFRtmpPusher.cpp
+ Compile [x64] SFRtmpPusher.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealGame/Development/StreamForge/SFRtmpPusher.cpp.obj.rsp"
+ Compile [x64] StreamForgeSubsystem.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] StreamForgeSubsystem.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+ Compile [x64] StreamForgeSubsystem.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealGame/Development/StreamForge/StreamForgeSubsystem.cpp.obj.rsp"
+[8/18] Compile [x64] StreamForgeSubsystem.cpp
+** For UEtestEditor-Win64-Development **
+ Compile [x64] SFAudioPipeline.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] SFAudioPipeline.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+[9/18] Compile [x64] SFAudioPipeline.cpp
+ Compile [x64] SFAudioPipeline.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/SFAudioPipeline.cpp.obj.rsp"
+** For UEtest-Win64-Development **
+ Compile [x64] SFAudioPipeline.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] SFAudioPipeline.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+ Compile [x64] SFAudioPipeline.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealGame/Development/StreamForge/SFAudioPipeline.cpp.obj.rsp"
+[10/18] Compile [x64] SFAudioPipeline.cpp
+** For UEtestEditor-Win64-Development **
+ Compile [x64] SFControlChannel.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] SFControlChannel.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+[11/18] Compile [x64] SFControlChannel.cpp
+ Compile [x64] SFControlChannel.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/SFControlChannel.cpp.obj.rsp"
+** For UEtest-Win64-Development **
+ Compile [x64] SFVideoPipeline.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] SFVideoPipeline.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+[12/18] Compile [x64] SFVideoPipeline.cpp
+ Compile [x64] SFVideoPipeline.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealGame/Development/StreamForge/SFVideoPipeline.cpp.obj.rsp"
+** For UEtestEditor-Win64-Development **
+ Compile [x64] SFVideoPipeline.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] SFVideoPipeline.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.7\Engine\Source
+ Compile [x64] SFVideoPipeline.cpp: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/SFVideoPipeline.cpp.obj.rsp"
+[13/18] Compile [x64] SFVideoPipeline.cpp
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 4148 C:\ProgramData\Epic\UnrealBuildAccelerator\memgroups (Access is denied.)
+SetFileInformationByHandle (FileDispositionInfo) failed on 4512 C:/Users/Administrator/AppData/Roaming/Unreal Engine/AutomationTool/Logs/C+Program+Files+Epic+Games+UE_5.7/UBA-UEtestEditor-Win64-Development.uba (Access is denied.)
+Total time in Unreal Build Accelerator local executor: 2.27 seconds
+
+Result: Failed (OtherCompilationError)
+Total execution time: 7.20 seconds
+Took 7.51s to run dotnet.exe, ExitCode=6
+UnrealBuildTool failed. See log for more details. (C:\Users\Administrator\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.7\UBA-UEtestEditor-Win64-Development.txt)
+AutomationTool executed for 0h 0m 9s
+AutomationTool exiting with ExitCode=6 (6)
+BUILD FAILED

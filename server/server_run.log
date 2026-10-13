@@ -1,0 +1,58 @@
+[2026-09-04 04:51:07.673] [INFO ] ========================================================
+[2026-09-04 04:51:07.676] [INFO ]   ZS Live 调度服务已启动
+[2026-09-04 04:51:07.676] [INFO ]   观看页:   http://10.3.18.189:3100/
+[2026-09-04 04:51:07.676] [INFO ]   管理后台: http://10.3.18.189:3100/admin
+[2026-09-04 04:51:07.676] [INFO ]   WHEP:     http://10.3.18.189:8890/zslive/<instanceId>/whep
+[2026-09-04 04:51:07.676] [INFO ]   MediaMTX: rtmp://10.3.18.189:1935/zslive/<instanceId>
+[2026-09-04 04:51:07.676] [INFO ] ========================================================
+[2026-09-04 04:51:32.986] [INFO ] [Pool] 启动实例 inst_mtmh89o94c61346d (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmh89o94c61346d -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmh89o94c61346d -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=1a967776c54cbdc3f9cc57af1c61cb641ee824bb0605b2ddb07b288d1870f2a3 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 04:51:37.695] [WARN ] [Sweep] 实例 inst_mtmh89o94c61346d agent 心跳丢失
+[2026-09-04 04:51:43.902] [INFO ] [Hub] UE 实例 inst_mtmh89o94c61346d agent 接入
+[2026-09-04 04:51:43.904] [INFO ] [Pool] 实例 inst_mtmh89o94c61346d 就绪 (pid=34156 platform=Windows)
+[2026-09-04 04:53:23.383] [INFO ] [Session] sess_mtmh89npb3276a79 结束 (user_release)
+[2026-09-04 04:58:37.872] [INFO ] [Pool] 实例 inst_mtmh89o94c61346d 空闲超时回收
+[2026-09-04 04:58:37.872] [INFO ] [Pool] 停止实例 inst_mtmh89o94c61346d (idle_timeout)
+[2026-09-04 04:58:38.929] [INFO ] [Hub] UE 实例 inst_mtmh89o94c61346d agent 断开
+[2026-09-04 04:58:40.646] [INFO ] [Pool] 实例 inst_mtmh89o94c61346d 退出 (code=0, state=stopping)
+[2026-09-04 05:04:57.229] [INFO ] [Pool] 启动实例 inst_mtmhpi8cb2c51e7e (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmhpi8cb2c51e7e -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmhpi8cb2c51e7e -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=c63cca040d11167c867deb47142f47ac93a8977c285451650fbc643317c5a048 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 05:05:00.988] [INFO ] [Hub] UE 实例 inst_mtmhpi8cb2c51e7e agent 接入
+[2026-09-04 05:05:00.991] [INFO ] [Pool] 实例 inst_mtmhpi8cb2c51e7e 就绪 (pid=14680 platform=Windows)
+[2026-09-04 05:06:02.849] [INFO ] [Pool] 启动实例 inst_mtmhqwv5a5c99102 (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmhqwv5a5c99102 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmhqwv5a5c99102 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=e2040d6d872762f8d96ba97931d8554ef613c7c938d35e2b838141b91a9f08ac -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 05:06:02.859] [INFO ] [Hub] 浏览器会话 sess_mtmhqwv572faaa7d 接入
+[2026-09-04 05:06:06.725] [INFO ] [Hub] UE 实例 inst_mtmhqwv5a5c99102 agent 接入
+[2026-09-04 05:06:06.726] [INFO ] [Pool] 实例 inst_mtmhqwv5a5c99102 就绪 (pid=20412 platform=Windows)
+[2026-09-04 05:19:42.414] [INFO ] [Pool] 启动实例 inst_mtmi8h8u3f88a2b3 (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmi8h8u3f88a2b3 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmi8h8u3f88a2b3 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=0bf80ac7933b631cb364f94b6c54a5ee0cb403d4f0c5034bd8f06618f4709a53 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 05:19:42.422] [INFO ] [Hub] 浏览器会话 sess_mtmi8h8t512f5cab 接入
+[2026-09-04 05:19:46.279] [INFO ] [Hub] UE 实例 inst_mtmi8h8u3f88a2b3 agent 接入
+[2026-09-04 05:19:46.299] [INFO ] [Pool] 实例 inst_mtmi8h8u3f88a2b3 就绪 (pid=16528 platform=Windows)
+[2026-09-04 05:25:50.243] [INFO ] [Session] sess_mtmhqwv572faaa7d 结束 (user_release)
+[2026-09-04 05:25:50.318] [INFO ] [Session] sess_mtmi8h8t512f5cab 结束 (user_release)
+[2026-09-04 05:26:39.225] [INFO ] [Pool] 实例 inst_mtmhpi8cb2c51e7e 退出 (code=4294967295, state=assigned)
+[2026-09-04 05:26:39.240] [INFO ] [Pool] 实例 inst_mtmhqwv5a5c99102 退出 (code=4294967295, state=assigned)
+[2026-09-04 05:26:39.243] [INFO ] [Pool] 实例 inst_mtmi8h8u3f88a2b3 退出 (code=4294967295, state=assigned)
+[2026-09-04 05:26:39.243] [INFO ] [Pool] 启动实例 inst_mtmihevf74415c67 (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmihevf74415c67 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmihevf74415c67 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=8a9e4684c7aba747536e17bf6615013ed283f665b5326b93aa8e8f03363cf3c9 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 05:26:39.423] [INFO ] [Hub] UE 实例 inst_mtmi8h8u3f88a2b3 agent 断开
+[2026-09-04 05:26:39.588] [INFO ] [Hub] UE 实例 inst_mtmhpi8cb2c51e7e agent 断开
+[2026-09-04 05:26:39.609] [INFO ] [Hub] UE 实例 inst_mtmhqwv5a5c99102 agent 断开
+[2026-09-04 05:26:42.846] [INFO ] [Hub] UE 实例 inst_mtmihevf74415c67 agent 接入
+[2026-09-04 05:26:42.850] [INFO ] [Pool] 实例 inst_mtmihevf74415c67 就绪 (pid=9652 platform=Windows)
+[2026-09-04 05:48:54.833] [INFO ] [Pool] 实例 inst_mtmihevf74415c67 退出 (code=4294967295, state=assigned)
+[2026-09-04 05:48:54.833] [INFO ] [Pool] 启动实例 inst_mtmja1f5ee8f7076 (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmja1f5ee8f7076 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmja1f5ee8f7076 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=59b86348d4b8dc151cec5591ff1fe41cacc6979abfa3eeb1f3a1ab7af89661be -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 05:48:54.962] [INFO ] [Hub] UE 实例 inst_mtmihevf74415c67 agent 断开
+[2026-09-04 05:48:58.429] [INFO ] [Hub] UE 实例 inst_mtmja1f5ee8f7076 agent 接入
+[2026-09-04 05:48:58.431] [INFO ] [Pool] 实例 inst_mtmja1f5ee8f7076 就绪 (pid=29148 platform=Windows)
+[2026-09-04 05:49:13.224] [INFO ] [Hub] 浏览器会话 sess_mtmhqwv572faaa7d 断开
+[2026-09-04 05:49:13.319] [INFO ] [Hub] 浏览器会话 sess_mtmi8h8t512f5cab 断开
+[2026-09-04 05:49:16.178] [INFO ] [Pool] 实例 inst_mtmja1f5ee8f7076 退出 (code=4294967295, state=assigned)
+[2026-09-04 05:49:16.179] [INFO ] [Pool] 启动实例 inst_mtmjahw397ce933b (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmjahw397ce933b -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmjahw397ce933b -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=21ca974776b4e9169b1d2db767b2b3afc68c1072a58647743f53be0e36a1e927 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 05:49:16.299] [INFO ] [Hub] UE 实例 inst_mtmja1f5ee8f7076 agent 断开
+[2026-09-04 05:49:19.745] [INFO ] [Hub] UE 实例 inst_mtmjahw397ce933b agent 接入
+[2026-09-04 05:49:19.749] [INFO ] [Pool] 实例 inst_mtmjahw397ce933b 就绪 (pid=42792 platform=Windows)
+[2026-09-04 05:50:28.360] [INFO ] [Pool] 实例 inst_mtmjahw397ce933b 退出 (code=4294967295, state=assigned)
+[2026-09-04 05:50:28.361] [INFO ] [Pool] 启动实例 inst_mtmjc1l58e0623e6 (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmjc1l58e0623e6 -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmjc1l58e0623e6 -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=b36319f2929ef93819af560b5b093a779ae78bbccda411f40e7d7c5907962b61 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 05:50:28.496] [INFO ] [Hub] UE 实例 inst_mtmjahw397ce933b agent 断开
+[2026-09-04 05:50:33.203] [INFO ] [Hub] UE 实例 inst_mtmjc1l58e0623e6 agent 接入
+[2026-09-04 05:50:33.206] [INFO ] [Pool] 实例 inst_mtmjc1l58e0623e6 就绪 (pid=6880 platform=Windows)
+[2026-09-04 05:51:12.505] [INFO ] [Pool] 实例 inst_mtmjc1l58e0623e6 退出 (code=4294967295, state=assigned)
+[2026-09-04 05:51:12.505] [INFO ] [Pool] 启动实例 inst_mtmjcznd0fc58f5c (UEtest 5.7 打包版): F:\streamming\ZS_Live\UETest\Package\Windows\UEtest.exe -windowed -ResX=1280 -ResY=720 -log -SFInstanceId=inst_mtmjcznd0fc58f5c -SFRtmpUrl=rtmp://127.0.0.1:1935/zslive/inst_mtmjcznd0fc58f5c -SFAgentUrl=ws://10.3.18.189:3100/agent -SFAgentToken=925dcf2e289ea99ad8e5cec6256fa32d0a19201f101275d7b992a954761ffec0 -SFWidth=1280 -SFHeight=720 -SFFps=30 -SFBitrate=4000 -SFMaxBitrate=6000 -SFAudio=pcma -SFInput=1
+[2026-09-04 05:51:12.623] [INFO ] [Hub] UE 实例 inst_mtmjc1l58e0623e6 agent 断开

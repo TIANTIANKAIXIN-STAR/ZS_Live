@@ -10,14 +10,21 @@ yarn-error.log*
 # ===== 运行时数据 / 密钥（切勿提交） =====
 server/data/
 server/.edge-profile/
+# 授权密钥：私钥绝对不能进任何公开/共享仓库；公钥(server/license.pub.pem)可随部署包分发（已在发布脚本白名单）
 server/license.key
 server/license.secret
+server/license.priv.pem
+# 已签发的客户 key（有效授权串，绝不入库）
+server/keys/
 .env
 .env.*
 *.local
 
 # ===== 浏览器测试缓存 / 测试截图（非源码，不入库） =====
 **/*.png
+# 产品截图白名单（README 展示用）
+!docs/images/*.png
+!docs/images/*.jpg
 
 # ===== 日志 =====
 *.log

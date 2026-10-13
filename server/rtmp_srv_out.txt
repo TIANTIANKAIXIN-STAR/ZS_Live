@@ -1,0 +1,10 @@
+listening on 1936
+conn from ('127.0.0.1', 63642)
+cmd: connect txn=1.0
+cmd: createStream txn=2.0
+cmd: publish txn=3.0
+PUBLISH started
+
+video_tags=0 audio_tags=0 seq_headers=0 keyframe_flags=0
+NAL histogram: {}  (1=P 5=IDR 6=SEI 7=SPS 8=PPS 9=AUD 12=filler)
+first frames (frametype, nals, size, ts):

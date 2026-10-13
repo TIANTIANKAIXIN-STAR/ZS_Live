@@ -1,0 +1,23 @@
+listening on 1936
+conn from ('127.0.0.1', 50060)
+cmd: connect txn=1.0
+cmd: createStream txn=2.0
+cmd: publish txn=3.0
+PUBLISH started
+
+video_tags=2249 audio_tags=3516 seq_headers=8 keyframe_flags=0
+NAL histogram: {6: 2241, 1: 2241, 12: 51}  (1=P 5=IDR 6=SEI 7=SPS 8=PPS 9=AUD 12=filler)
+first frames (frametype, nals, size, ts):
+  (2, [6, 1], 21446, 33)
+  (2, [6, 1], 979, 66)
+  (2, [6, 1], 3611, 100)
+  (2, [6, 1], 3204, 133)
+  (2, [6, 1], 6026, 166)
+  (2, [6, 1], 7489, 200)
+  (2, [6, 1], 4767, 233)
+  (2, [6, 1], 3626, 266)
+  (2, [6, 1], 2640, 300)
+  (2, [6, 1], 2679, 333)
+  (2, [6, 1], 2749, 366)
+  (2, [6, 1], 2051, 400)
+ts: first=0 last=74933 neg=0/2248 min=33 max=34

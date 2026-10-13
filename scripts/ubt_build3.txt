@@ -1,0 +1,7 @@
+﻿			         ^
+[3/5] Compile [x64] SFVideoPipeline.cpp
+Total time in Parallel executor: 11.36 seconds
+
+Result: Failed (OtherCompilationError)
+Total execution time: 13.14 seconds
+
