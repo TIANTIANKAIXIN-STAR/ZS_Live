@@ -1,0 +1,13 @@
+﻿
+
+Id        : 41448
+Path      : F:\streamming\ZS_Live\launcher\ZSLiveLauncher.exe
+StartTime : 2026/10/12 星期一 8:39:32
+
+Id        : 55348
+Path      : F:\streamming\ZS_Live\launcher\ZSLiveLauncher.exe
+StartTime : 2026/10/10 星期六 16:50:08
+
+
+
+

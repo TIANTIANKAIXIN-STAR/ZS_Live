@@ -1,0 +1,31 @@
+# ZS Live - MediaMTX 配置（由启动脚本自动生成 mediamtx.yml）
+# 生成时会替换 {{LAN_IP}} 为本机局域网 IP
+# 端口与 server/.env 中 MEDIAMTX_* 保持一致
+
+# 全局
+api: yes
+apiAddress: 127.0.0.1:9997
+
+# 写出队列（环形缓冲，必须为 2 的幂）。
+# 默认 512 大约只够 5~8 Mbps；4K@45Mbps 会频繁 "write queue is full" → 浏览器跳帧卡顿。
+# 8192 可覆盖 4K 高码率局域网场景（代价是更高内存）。
+writeQueueSize: 8192
+
+# RTMP 接入（UE 插件推流入口）
+rtmp: yes
+rtmpAddress: :1935
+
+# WebRTC 输出（浏览器 WHEP 低延迟拉流）
+webrtc: yes
+webrtcAddress: :8890
+webrtcAdditionalHosts:
+  - {{LAN_IP}}
+
+# 未使用的协议关闭，减小攻击面
+rtsp: no
+hls: no
+srt: no
+
+# 路径：zslive/<instanceId> 由调度服务动态创建，无需预定义
+paths:
+  all_others:

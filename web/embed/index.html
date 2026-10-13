@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZS Live Embed</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; background: #000; overflow: hidden;
+    font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+  #stage { position: relative; width: 100%; height: 100%; }
+  video { width: 100%; height: 100%; object-fit: contain; background: #000; display: block; }
+
+  .overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 14px; background: rgba(10,12,16,.92); z-index: 10; color: #e6edf3; }
+  .overlay.hidden { display: none; }
+  .spinner { width: 38px; height: 38px; border: 3px solid #30363d; border-top-color: #2f81f7;
+    border-radius: 50%; animation: spin 1s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .overlay h2 { font-size: 16px; font-weight: 500; }
+  .overlay .sub { color: #8b949e; font-size: 12px; max-width: 80%; text-align: center; line-height: 1.7; }
+  .overlay.err .spinner { display: none; }
+  .overlay.err h2 { color: #f85149; }
+  .overlay .retry { margin-top: 6px; background: #2f81f7; color: #fff; border: 0; border-radius: 6px;
+    padding: 8px 22px; font-size: 13px; cursor: pointer; }
+
+  #btnSound { position: absolute; right: 10px; bottom: 10px; z-index: 6; display: none;
+    background: rgba(22,27,34,.85); color: #e6edf3; border: 1px solid #30363d; border-radius: 6px;
+    padding: 6px 12px; font-size: 12px; cursor: pointer; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <video id="video" autoplay playsinline muted></video>
+  <button id="btnSound">开启声音</button>
+  <div class="overlay" id="overlay">
+    <div class="spinner"></div>
+    <h2 id="ovTitle">正在连接…</h2>
+    <div class="sub" id="ovSub"></div>
+    <button class="retry" id="btnRetry" style="display:none">重新连接</button>
+  </div>
+</div>
+<script src="/embed/embed.js"></script>
+</body>
+</html>

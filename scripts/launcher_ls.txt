@@ -1,0 +1,17 @@
+﻿
+Name                        Length
+----                        ------
+publish-selfcontained             
+src                               
+launcher.config.example.bat 137   
+launcher.config.example.sh  146   
+README.md                   2265  
+start-linux.sh              2004  
+start-windows.bat           3042  
+stop-linux.sh               260   
+stop-windows.bat            429   
+ZSLiveLauncher.exe          219832
+ZSLiveLauncher.pdb          23704 
+
+
+

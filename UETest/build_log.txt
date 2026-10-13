@@ -1,0 +1,1429 @@
+Using bundled DotNet SDK version: 8.0.412 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UEtestEditor Win64 Development -Project=F://streamming//ZS_Live//UETest//UEtest//UEtest.uproject -WaitMutex
+Log file: C:\Users\Administrator\AppData\Local\UnrealBuildTool\Log.txt
+Building UEtestEditor...
+Using Visual Studio 2022 14.44.35227 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from StreamForge unity file: SFAmf0.cpp, SFAudioPipeline.cpp, SFControlChannel.cpp, SFMediaFormat.cpp, SFRtmpPusher.cpp, SFVideoPipeline.cpp, StreamForgeModule.cpp, StreamForgeSubsystem.cpp
+Determining max actions to execute in parallel (20 physical cores, 28 logical cores)
+  Executing up to 20 processes, one per physical core
+Using Unreal Build Accelerator local executor to run 8 action(s)
+  Storage capacity 40Gb
+---- Starting trace: 260904_090138 ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+[1/8] Compile [x64] SFAudioPipeline.cpp
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.h(8,1): fatal error C1083: 无法打开包括文件: “SubmixBufferListener.h”: No such file or directory
+#include "SubmixBufferListener.h"
+^
+[2/8] Compile [x64] StreamForgeModule.cpp
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,13): error C2065: “AVEncoder”: 未声明的标识符
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,13): error C2653: “AVEncoder”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,24): error C2065: “FVideoEncoderInputFrame”: 未声明的标识符
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,2): error C2923: "TSharedPtr": "FVideoEncoderInputFrame" 不是参数 "ObjectType" 的有效 模板 类型参数
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,24): note: 参见“FVideoEncoderInputFrame”的声明
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,2): error C2976: “TSharedPtr'”: 模板 参数太少
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,49): error C2955: “TSharedPtr”: 使用 类 模板 需要 模板 参数列表
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	                                               ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,59): error C2065: “AVEncoder”: 未声明的标识符
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                         ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,59): error C2653: “AVEncoder”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,70): error C2065: “FVideoEncoderInputFrame”: 未声明的标识符
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,48): error C2923: "TSharedPtr": "FVideoEncoderInputFrame" 不是参数 "ObjectType" 的有效 模板 类型参数
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                              ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,70): note: 参见“FVideoEncoderInputFrame”的声明
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,48): error C2976: “TSharedPtr'”: 模板 参数太少
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                              ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,95): error C2955: “TSharedPtr”: 使用 类 模板 需要 模板 参数列表
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                                             ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,108): error C2653: “AVEncoder”: 不是类或命名空间名称
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                                                          ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,102): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                                                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,131): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                                                                                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,13): error C2065: “AVEncoder”: 未声明的标识符
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,13): error C2653: “AVEncoder”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,24): error C2065: “FVideoEncoderInput”: 未声明的标识符
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,2): error C2923: "TSharedPtr": "FVideoEncoderInput" 不是参数 "ObjectType" 的有效 模板 类型参数
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,24): note: 参见“FVideoEncoderInput”的声明
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,2): error C2976: “TSharedPtr'”: 模板 参数太少
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,44): error C2955: “TSharedPtr”: 使用 类 模板 需要 模板 参数列表
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	                                          ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,13): error C2065: “AVEncoder”: 未声明的标识符
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,13): error C2653: “AVEncoder”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,24): error C2065: “FVideoEncoder”: 未声明的标识符
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,2): error C2923: "TUniquePtr": "FVideoEncoder" 不是参数 "T" 的有效 模板 类型参数
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,24): note: 参见“FVideoEncoder”的声明
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,2): error C2976: “TUniquePtr'”: 模板 参数太少
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(106,7): note: 参见“TUniquePtr”的声明
+class TUniquePtr : private Deleter
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,39): error C2955: “TUniquePtr”: 使用 类 模板 需要 模板 参数列表
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	                                     ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(106,7): note: 参见“TUniquePtr”的声明
+class TUniquePtr : private Deleter
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,18): error C2065: “AVEncoder”: 未声明的标识符
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,18): error C2653: “AVEncoder”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,29): error C2065: “FVideoEncoderInputFrame”: 未声明的标识符
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	                           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,7): error C2923: "TSharedPtr": "FVideoEncoderInputFrame" 不是参数 "ObjectType" 的有效 模板 类型参数
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,29): note: 参见“FVideoEncoderInputFrame”的声明
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	                           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,7): error C2976: “TSharedPtr'”: 模板 参数太少
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	     ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,7): error C3203: "TSharedPtr": 未指定的 类 模板 不能用作 模板 参数 "InKeyType" 的 模板 参数，应为真实类型
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(29,52): error C2662: “bool TUniquePtr<T,Deleter>::IsValid(void) const”: 不能将“this”指针从“const TUniquePtr”转换为“const TUniquePtr<T,Deleter> &”
+	bool IsEncoderReady() const { return VideoEncoder.IsValid(); }
+	                                                  ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(29,39): note: 原因如下: 无法从“const TUniquePtr”转换为“const TUniquePtr<T,Deleter>”
+	bool IsEncoderReady() const { return VideoEncoder.IsValid(); }
+	                                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(29,39): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(280,21): note: 参见“TUniquePtr<T,Deleter>::IsValid”的声明
+	[[nodiscard]] bool IsValid() const
+	                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(29,52): note: 尝试匹配参数列表“()”时
+	bool IsEncoderReady() const { return VideoEncoder.IsValid(); }
+	                                                  ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.h(8,1): fatal error C1083: 无法打开包括文件: “SubmixBufferListener.h”: No such file or directory
+#include "SubmixBufferListener.h"
+^
+[3/8] Compile [x64] SFControlChannel.cpp
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(69,38): error C2039: "Backtick": 不是 "EKeys" 的成员
+			Map.Add(TEXT("Backquote"), EKeys::Backtick);
+			                                  ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\InputCore\Classes\InputCoreTypes.h(289,8): note: 参见“EKeys”的声明
+struct EKeys
+       ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(69,38): error C2065: “Backtick”: 未声明的标识符
+			Map.Add(TEXT("Backquote"), EKeys::Backtick);
+			                                  ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(84,40): error C2039: "NumPadEnter": 不是 "EKeys" 的成员
+			Map.Add(TEXT("NumpadEnter"), EKeys::NumPadEnter);
+			                                    ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\InputCore\Classes\InputCoreTypes.h(289,8): note: 参见“EKeys”的声明
+struct EKeys
+       ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(84,40): error C2065: “NumPadEnter”: 未声明的标识符
+			Map.Add(TEXT("NumpadEnter"), EKeys::NumPadEnter);
+			                                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(151,20): error C2665: “TDelegate<bool (float),FDefaultDelegateUserPolicy>::CreateRaw”: 没有重载函数可以转换所有参数类型
+		FTickerDelegate::CreateRaw(this, &FSFControlChannel::TickStats), 1.0f);
+		                 ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl(431,79): note: 可能是“TDelegate<bool (float),FDefaultDelegateUserPolicy> TDelegate<bool (float),FDefaultDelegateUserPolicy>::CreateRaw<FSFControlChannel,>(const UserClass *,bool (__cdecl FSFControlChannel::* )(float) const)”
+        with
+        [
+            UserClass=FSFControlChannel
+        ]
+	[[nodiscard]] inline static TDelegate<RetValType(ParamTypes...), UserPolicy> CreateRaw(const UserClass* InUserObject, typename TMemFunPtrType<true, UserClass, RetValType (ParamTypes..., std::decay_t<VarTypes>...)>::Type InFunc, VarTypes&&... Vars)
+	                                                                             ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(151,20): note: “TDelegate<bool (float),FDefaultDelegateUserPolicy> TDelegate<bool (float),FDefaultDelegateUserPolicy>::CreateRaw<FSFControlChannel,>(const UserClass *,bool (__cdecl FSFControlChannel::* )(float) const)”: 无法将参数 2 从“void (__cdecl FSFControlChannel::* )(float)”转换为“bool (__cdecl FSFControlChannel::* )(float) const”
+        with
+        [
+            UserClass=FSFControlChannel
+        ]
+		FTickerDelegate::CreateRaw(this, &FSFControlChannel::TickStats), 1.0f);
+		                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(151,36): note: 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+		FTickerDelegate::CreateRaw(this, &FSFControlChannel::TickStats), 1.0f);
+		                                 ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl(422,79): note: 或    “TDelegate<bool (float),FDefaultDelegateUserPolicy> TDelegate<bool (float),FDefaultDelegateUserPolicy>::CreateRaw<FSFControlChannel,>(UserClass *,bool (__cdecl FSFControlChannel::* )(float))”
+        with
+        [
+            UserClass=FSFControlChannel
+        ]
+	[[nodiscard]] inline static TDelegate<RetValType(ParamTypes...), UserPolicy> CreateRaw(UserClass* InUserObject, typename TMemFunPtrType<false, UserClass, RetValType (ParamTypes..., std::decay_t<VarTypes>...)>::Type InFunc, VarTypes&&... Vars)
+	                                                                             ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(151,20): note: “TDelegate<bool (float),FDefaultDelegateUserPolicy> TDelegate<bool (float),FDefaultDelegateUserPolicy>::CreateRaw<FSFControlChannel,>(UserClass *,bool (__cdecl FSFControlChannel::* )(float))”: 无法将参数 2 从“void (__cdecl FSFControlChannel::* )(float)”转换为“bool (__cdecl FSFControlChannel::* )(float)”
+        with
+        [
+            UserClass=FSFControlChannel
+        ]
+		FTickerDelegate::CreateRaw(this, &FSFControlChannel::TickStats), 1.0f);
+		                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(151,36): note: 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+		FTickerDelegate::CreateRaw(this, &FSFControlChannel::TickStats), 1.0f);
+		                                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(151,20): note: 尝试匹配参数列表“(FSFControlChannel *, void (__cdecl FSFControlChannel::* )(float))”时
+		FTickerDelegate::CreateRaw(this, &FSFControlChannel::TickStats), 1.0f);
+		                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(162,30): error C2664: “void FTSTicker::RemoveTicker(FTSTicker::FDelegateHandle)”: 无法将参数 1 从“FDelegateHandle”转换为“FTSTicker::FDelegateHandle”
+		FTSTicker::GetCoreTicker().RemoveTicker(TickerHandle);
+		                           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(162,43): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+		FTSTicker::GetCoreTicker().RemoveTicker(TickerHandle);
+		                                        ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Ticker.h(66,23): note: 参见“FTSTicker::RemoveTicker”的声明
+	static CORE_API void RemoveTicker(FDelegateHandle Handle);
+	                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFControlChannel.cpp(162,30): note: 尝试匹配参数列表“(FDelegateHandle)”时
+		FTSTicker::GetCoreTicker().RemoveTicker(TickerHandle);
+		                           ^
+[4/8] Compile [x64] SFRtmpPusher.cpp
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFRtmpPusher.cpp(278,10): error C2039: "SetSendTimeout": 不是 "FSocket" 的成员
+	Socket->SetSendTimeout(FTimespan::FromSeconds(10));
+	        ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Sockets\Public\Sockets.h(18,7): note: 参见“FSocket”的声明
+class FSocket : public TSharedFromThis<FSocket, ESPMode::ThreadSafe>
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFRtmpPusher.cpp(279,10): error C2039: "SetRecvTimeout": 不是 "FSocket" 的成员
+	Socket->SetRecvTimeout(FTimespan::FromMilliseconds(200));
+	        ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Sockets\Public\Sockets.h(18,7): note: 参见“FSocket”的声明
+class FSocket : public TSharedFromThis<FSocket, ESPMode::ThreadSafe>
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFRtmpPusher.cpp(330,55): error C2065: “SE_TIMEDOUT”: 未声明的标识符
+			if (ISocketSubsystem::Get()->GetLastErrorCode() == SE_TIMEDOUT)
+			                                                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFRtmpPusher.cpp(466,16): error C2065: “SE_TIMEDOUT”: 未声明的标识符
+	return Err == SE_TIMEDOUT || Err == SE_EWOULDBLOCK || Err == SE_TRY_AGAIN;
+	              ^
+[5/8] Compile [x64] SFVideoPipeline.cpp
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,13): error C2065: “AVEncoder”: 未声明的标识符
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,13): error C2653: “AVEncoder”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,24): error C2065: “FVideoEncoderInputFrame”: 未声明的标识符
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,2): error C2923: "TSharedPtr": "FVideoEncoderInputFrame" 不是参数 "ObjectType" 的有效 模板 类型参数
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,24): note: 参见“FVideoEncoderInputFrame”的声明
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,2): error C2976: “TSharedPtr'”: 模板 参数太少
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,49): error C2955: “TSharedPtr”: 使用 类 模板 需要 模板 参数列表
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	                                               ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,59): error C2065: “AVEncoder”: 未声明的标识符
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                         ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,59): error C2653: “AVEncoder”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,70): error C2065: “FVideoEncoderInputFrame”: 未声明的标识符
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,48): error C2923: "TSharedPtr": "FVideoEncoderInputFrame" 不是参数 "ObjectType" 的有效 模板 类型参数
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                              ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,70): note: 参见“FVideoEncoderInputFrame”的声明
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,48): error C2976: “TSharedPtr'”: 模板 参数太少
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                              ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,95): error C2955: “TSharedPtr”: 使用 类 模板 需要 模板 参数列表
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                                             ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,108): error C2653: “AVEncoder”: 不是类或命名空间名称
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                                                          ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,102): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                                                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,131): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	                                                                                                                                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,13): error C2065: “AVEncoder”: 未声明的标识符
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,13): error C2653: “AVEncoder”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,24): error C2065: “FVideoEncoderInput”: 未声明的标识符
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,2): error C2923: "TSharedPtr": "FVideoEncoderInput" 不是参数 "ObjectType" 的有效 模板 类型参数
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,24): note: 参见“FVideoEncoderInput”的声明
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,2): error C2976: “TSharedPtr'”: 模板 参数太少
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,44): error C2955: “TSharedPtr”: 使用 类 模板 需要 模板 参数列表
+	TSharedPtr<AVEncoder::FVideoEncoderInput> VideoEncoderInput;
+	                                          ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,13): error C2065: “AVEncoder”: 未声明的标识符
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,13): error C2653: “AVEncoder”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,24): error C2065: “FVideoEncoder”: 未声明的标识符
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,2): error C2923: "TUniquePtr": "FVideoEncoder" 不是参数 "T" 的有效 模板 类型参数
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,24): note: 参见“FVideoEncoder”的声明
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,2): error C2976: “TUniquePtr'”: 模板 参数太少
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(106,7): note: 参见“TUniquePtr”的声明
+class TUniquePtr : private Deleter
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(47,39): error C2955: “TUniquePtr”: 使用 类 模板 需要 模板 参数列表
+	TUniquePtr<AVEncoder::FVideoEncoder> VideoEncoder;
+	                                     ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(106,7): note: 参见“TUniquePtr”的声明
+class TUniquePtr : private Deleter
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,18): error C2065: “AVEncoder”: 未声明的标识符
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,18): error C2653: “AVEncoder”: 不是类或命名空间名称
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,29): error C2065: “FVideoEncoderInputFrame”: 未声明的标识符
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	                           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,7): error C2923: "TSharedPtr": "FVideoEncoderInputFrame" 不是参数 "ObjectType" 的有效 模板 类型参数
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,29): note: 参见“FVideoEncoderInputFrame”的声明
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	                           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,7): error C2976: “TSharedPtr'”: 模板 参数太少
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	     ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(48,7): error C3203: "TSharedPtr": 未指定的 类 模板 不能用作 模板 参数 "InKeyType" 的 模板 参数，应为真实类型
+	TMap<TSharedPtr<AVEncoder::FVideoEncoderInputFrame>, FTextureRHIRef> BackBuffers;
+	     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(29,52): error C2662: “bool TUniquePtr<T,Deleter>::IsValid(void) const”: 不能将“this”指针从“const TUniquePtr”转换为“const TUniquePtr<T,Deleter> &”
+	bool IsEncoderReady() const { return VideoEncoder.IsValid(); }
+	                                                  ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(29,39): note: 原因如下: 无法从“const TUniquePtr”转换为“const TUniquePtr<T,Deleter>”
+	bool IsEncoderReady() const { return VideoEncoder.IsValid(); }
+	                                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(29,39): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(280,21): note: 参见“TUniquePtr<T,Deleter>::IsValid”的声明
+	[[nodiscard]] bool IsValid() const
+	                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(29,52): note: 尝试匹配参数列表“()”时
+	bool IsEncoderReady() const { return VideoEncoder.IsValid(); }
+	                                                  ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): error C2678: 二进制“=”: 没有找到接受“TSharedPtr”类型的左操作数的运算符(或没有可接受的转换)
+	SF_AV_ENC(
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(954,21): note: 可能是“TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(TSharedPtr<ObjectType,InMode> &&)”
+	inline TSharedPtr& operator=( TSharedPtr&& InSharedPtr )
+	                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(TSharedPtr<ObjectType,InMode> &&)”: 不能将“this”指针从“TSharedPtr”转换为“TSharedPtr<ObjectType,InMode> &”
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: 原因如下: 无法从“TSharedPtr”转换为“TSharedPtr<ObjectType,InMode>”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(945,21): note: 或    “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(const TSharedPtr<ObjectType,InMode> &)”
+	inline TSharedPtr& operator=( TSharedPtr const& InSharedPtr )
+	                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(const TSharedPtr<ObjectType,InMode> &)”: 不能将“this”指针从“TSharedPtr”转换为“TSharedPtr<ObjectType,InMode> &”
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: 原因如下: 无法从“TSharedPtr”转换为“TSharedPtr<ObjectType,InMode>”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(932,21): note: 或    “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(SharedPointerInternals::FNullTag *)”
+	inline TSharedPtr& operator=( SharedPointerInternals::FNullTag* )
+	                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(SharedPointerInternals::FNullTag *)”: 不能将“this”指针从“TSharedPtr”转换为“TSharedPtr<ObjectType,InMode> &”
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: 原因如下: 无法从“TSharedPtr”转换为“TSharedPtr<ObjectType,InMode>”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(1016,21): note: 或    “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(SharedPointerInternals::TRawPtrProxyWithDeleter<OtherType,DeleterType> &&)”
+	inline TSharedPtr& operator=( SharedPointerInternals::TRawPtrProxyWithDeleter< OtherType, DeleterType >&& InRawPtrProxy )
+	                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(SharedPointerInternals::TRawPtrProxyWithDeleter<OtherType,DeleterType> &&)”: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInput,ESPMode::ThreadSafe>”推导出“SharedPointerInternals::TRawPtrProxyWithDeleter<OtherType,DeleterType> &&”的 模板 参数
+	SF_AV_ENC(
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(997,21): note: 或    “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(const SharedPointerInternals::TRawPtrProxyWithDeleter<OtherType,DeleterType> &)”
+	inline TSharedPtr& operator=( SharedPointerInternals::TRawPtrProxyWithDeleter< OtherType, DeleterType > const& InRawPtrProxy )
+	                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(const SharedPointerInternals::TRawPtrProxyWithDeleter<OtherType,DeleterType> &)”: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInput,ESPMode::ThreadSafe>”推导出“const SharedPointerInternals::TRawPtrProxyWithDeleter<OtherType,DeleterType> &”的 模板 参数
+	SF_AV_ENC(
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(978,21): note: 或    “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(const SharedPointerInternals::TRawPtrProxy<OtherType> &)”
+	inline TSharedPtr& operator=( SharedPointerInternals::TRawPtrProxy< OtherType > const& InRawPtrProxy )
+	                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: “TSharedPtr<ObjectType,InMode> &TSharedPtr<ObjectType,InMode>::operator =(const SharedPointerInternals::TRawPtrProxy<OtherType> &)”: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInput,ESPMode::ThreadSafe>”推导出“const SharedPointerInternals::TRawPtrProxy<OtherType> &”的 模板 参数
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): note: 尝试匹配参数列表“(TSharedPtr, TSharedPtr<AVEncoder::FVideoEncoderInput,ESPMode::ThreadSafe>)”时
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(56,2): error C2582: “operator =”函数在“TSharedPtr”中不可用
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(76,25): error C2662: “const bool TSharedPtr<ObjectType,InMode>::IsValid(void) const”: 不能将“this”指针从“TSharedPtr”转换为“const TSharedPtr<ObjectType,InMode> &”
+	if (!VideoEncoderInput.IsValid())
+	                       ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(76,7): note: 原因如下: 无法从“TSharedPtr”转换为“const TSharedPtr<ObjectType,InMode>”
+	if (!VideoEncoderInput.IsValid())
+	     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(76,7): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(1085,47): note: 参见“TSharedPtr<ObjectType,InMode>::IsValid”的声明
+	[[nodiscard]] UE_FORCEINLINE_HINT const bool IsValid() const
+	                                             ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(76,25): note: 尝试匹配参数列表“()”时
+	if (!VideoEncoderInput.IsValid())
+	                       ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(82,2): error C2665: “AVEncoder::FVideoEncoderFactory::Create”: 没有重载函数可以转换所有参数类型
+	SF_AV_ENC(
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\AVEncoder\Public\VideoEncoderFactory.h(47,43): note: 可能是“TUniquePtr<AVEncoder::FVideoEncoder,TDefaultDelete<T>> AVEncoder::FVideoEncoderFactory::Create(uint32,TSharedPtr<AVEncoder::FVideoEncoderInput,ESPMode::ThreadSafe>,const AVEncoder::FVideoEncoder::FLayerConfig &)”
+        with
+        [
+            T=AVEncoder::FVideoEncoder
+        ]
+		AVENCODER_API TUniquePtr<FVideoEncoder> Create(uint32 InID, TSharedPtr<FVideoEncoderInput> InInput, const FVideoEncoder::FLayerConfig& config);
+		                                        ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(82,2): note: “TUniquePtr<AVEncoder::FVideoEncoder,TDefaultDelete<T>> AVEncoder::FVideoEncoderFactory::Create(uint32,TSharedPtr<AVEncoder::FVideoEncoderInput,ESPMode::ThreadSafe>,const AVEncoder::FVideoEncoder::FLayerConfig &)”: 无法将参数 2 从“TSharedPtr”转换为“TSharedPtr<AVEncoder::FVideoEncoderInput,ESPMode::ThreadSafe>”
+        with
+        [
+            T=AVEncoder::FVideoEncoder
+        ]
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(82,2): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(82,2): note: 尝试匹配参数列表“(const uint32, TSharedPtr, AVEncoder::FVideoEncoder::FLayerConfig)”时
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(82,2): error C2582: “operator =”函数在“TUniquePtr”中不可用
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(121,20): error C2662: “bool TUniquePtr<T,Deleter>::IsValid(void) const”: 不能将“this”指针从“TUniquePtr”转换为“const TUniquePtr<T,Deleter> &”
+	if (!VideoEncoder.IsValid())
+	                  ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(121,7): note: 原因如下: 无法从“TUniquePtr”转换为“const TUniquePtr<T,Deleter>”
+	if (!VideoEncoder.IsValid())
+	     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(121,7): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(280,21): note: 参见“TUniquePtr<T,Deleter>::IsValid”的声明
+	[[nodiscard]] bool IsValid() const
+	                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(121,20): note: 尝试匹配参数列表“()”时
+	if (!VideoEncoder.IsValid())
+	                  ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(127,2): error C2678: 二进制“->”: 没有找到接受“TUniquePtr”类型的左操作数的运算符(或没有可接受的转换)
+	VideoEncoder->SetOnEncodedPacket([this](uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+	^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(300,39): note: 可能是“T *TUniquePtr<T,Deleter>::operator ->(void) const”
+	[[nodiscard]] UE_FORCEINLINE_HINT T* operator->() const
+	                                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(127,2): note: “T *TUniquePtr<T,Deleter>::operator ->(void) const”: 不能将“this”指针从“TUniquePtr”转换为“const TUniquePtr<T,Deleter> &”
+	VideoEncoder->SetOnEncodedPacket([this](uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(127,2): note: 原因如下: 无法从“TUniquePtr”转换为“const TUniquePtr<T,Deleter>”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(127,2): note: 转换要求第二个用户定义的转换运算符或构造函数
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(127,2): note: 尝试匹配参数列表“(TUniquePtr)”时
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(127,16): error C2039: "SetOnEncodedPacket": 不是 "TUniquePtr" 的成员
+	VideoEncoder->SetOnEncodedPacket([this](uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+	              ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(106,7): note: 参见“TUniquePtr”的声明
+class TUniquePtr : private Deleter
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(127,89): warning C4996: 'AVEncoder::FVideoEncoderInputFrame': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	VideoEncoder->SetOnEncodedPacket([this](uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+	                                                                                       ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(129,3): error C2664: “void FSFVideoPipeline::OnEncodedPacket(uint32,const TSharedPtr,const int)”: 无法将参数 2 从“const TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const TSharedPtr”
+		OnEncodedPacket(LayerIndex, Frame, Packet);
+		^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(129,31): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+		OnEncodedPacket(LayerIndex, Frame, Packet);
+		                            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(39,7): note: 参见“FSFVideoPipeline::OnEncodedPacket”的声明
+	void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+	     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(129,3): note: 尝试匹配参数列表“(uint32, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>, const AVEncoder::FCodecPacket)”时
+		OnEncodedPacket(LayerIndex, Frame, Packet);
+		^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): error C2451: 类型为“TUniquePtr”的条件表达式无效
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): error C2678: 二进制“->”: 没有找到接受“TUniquePtr”类型的左操作数的运算符(或没有可接受的转换)
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(300,39): note: 可能是“T *TUniquePtr<T,Deleter>::operator ->(void) const”
+	[[nodiscard]] UE_FORCEINLINE_HINT T* operator->() const
+	                                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): note: “T *TUniquePtr<T,Deleter>::operator ->(void) const”: 不能将“this”指针从“TUniquePtr”转换为“const TUniquePtr<T,Deleter> &”
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): note: 原因如下: 无法从“TUniquePtr”转换为“const TUniquePtr<T,Deleter>”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): note: 转换要求第二个用户定义的转换运算符或构造函数
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): note: 尝试匹配参数列表“(TUniquePtr)”时
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): error C2039: "Shutdown": 不是 "TUniquePtr" 的成员
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(106,7): note: 参见“TUniquePtr”的声明
+class TUniquePtr : private Deleter
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): error C2662: “void TUniquePtr<T,Deleter>::Reset(T *)”: 不能将“this”指针从“TUniquePtr”转换为“TUniquePtr<T,Deleter> &”
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): note: 原因如下: 无法从“TUniquePtr”转换为“TUniquePtr<T,Deleter>”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(346,14): note: 参见“TUniquePtr<T,Deleter>::Reset”的声明
+	inline void Reset(T* InPtr = nullptr)
+	            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(165,2): note: 尝试匹配参数列表“()”时
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(176,33): error C2662: “bool TUniquePtr<T,Deleter>::IsValid(void) const”: 不能将“this”指针从“TUniquePtr”转换为“const TUniquePtr<T,Deleter> &”
+	if (!bRunning || !VideoEncoder.IsValid())
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(176,20): note: 原因如下: 无法从“TUniquePtr”转换为“const TUniquePtr<T,Deleter>”
+	if (!bRunning || !VideoEncoder.IsValid())
+	                  ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(176,20): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(280,21): note: 参见“TUniquePtr<T,Deleter>::IsValid”的声明
+	[[nodiscard]] bool IsValid() const
+	                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(176,33): note: 尝试匹配参数列表“()”时
+	if (!bRunning || !VideoEncoder.IsValid())
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(195,3): error C2678: 二进制“->”: 没有找到接受“TUniquePtr”类型的左操作数的运算符(或没有可接受的转换)
+		SF_AV_ENC(
+		^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(300,39): note: 可能是“T *TUniquePtr<T,Deleter>::operator ->(void) const”
+	[[nodiscard]] UE_FORCEINLINE_HINT T* operator->() const
+	                                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(195,3): note: “T *TUniquePtr<T,Deleter>::operator ->(void) const”: 不能将“this”指针从“TUniquePtr”转换为“const TUniquePtr<T,Deleter> &”
+		SF_AV_ENC(
+		^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(195,3): note: 原因如下: 无法从“TUniquePtr”转换为“const TUniquePtr<T,Deleter>”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(195,3): note: 转换要求第二个用户定义的转换运算符或构造函数
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(195,3): note: 尝试匹配参数列表“(TUniquePtr)”时
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(195,3): error C2039: "GetLayerConfig": 不是 "TUniquePtr" 的成员
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(106,7): note: 参见“TUniquePtr”的声明
+class TUniquePtr : private Deleter
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(195,3): error C3536: “Config”: 初始化之前无法使用
+		SF_AV_ENC(
+		^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(195,3): error C2039: "UpdateLayerConfig": 不是 "TUniquePtr" 的成员
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(106,7): note: 参见“TUniquePtr”的声明
+class TUniquePtr : private Deleter
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): error C2440: “初始化”: 无法从“TSharedPtr”转换为“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): error C2679: 二元“[”: 没有找到接受“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”类型的右操作数的运算符(或没有可接受的转换)
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(1410,53): note: 可能是“const TRefCountPtr<FRHITexture> &TMap<<error type>,FTextureRHIRef,FDefaultSetAllocator,TDefaultMapHashableKeyFuncs<InKeyType,InValueType,false>>::operator [](const int) const”
+        with
+        [
+            InKeyType=<error type>,
+            InValueType=FTextureRHIRef
+        ]
+	[[nodiscard]] UE_FORCEINLINE_HINT const ValueType& operator[](KeyConstPointerType Key) const
+	                                                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: “const TRefCountPtr<FRHITexture> &TMap<<error type>,FTextureRHIRef,FDefaultSetAllocator,TDefaultMapHashableKeyFuncs<InKeyType,InValueType,false>>::operator [](const int) const”: 无法将参数 2 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const int”
+        with
+        [
+            InKeyType=<error type>,
+            InValueType=FTextureRHIRef
+        ]
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(1406,47): note: 或    “TRefCountPtr<FRHITexture> &TMap<<error type>,FTextureRHIRef,FDefaultSetAllocator,TDefaultMapHashableKeyFuncs<InKeyType,InValueType,false>>::operator [](const int)”
+        with
+        [
+            InKeyType=<error type>,
+            InValueType=FTextureRHIRef
+        ]
+	[[nodiscard]] UE_FORCEINLINE_HINT ValueType& operator[](KeyConstPointerType Key)
+	                                             ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: “TRefCountPtr<FRHITexture> &TMap<<error type>,FTextureRHIRef,FDefaultSetAllocator,TDefaultMapHashableKeyFuncs<InKeyType,InValueType,false>>::operator [](const int)”: 无法将参数 2 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const int”
+        with
+        [
+            InKeyType=<error type>,
+            InValueType=FTextureRHIRef
+        ]
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: 尝试匹配参数列表“(TMap<<error type>,FTextureRHIRef,FDefaultSetAllocator,TDefaultMapHashableKeyFuncs<InKeyType,InValueType,false>>, TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>)”时
+        with
+        [
+            InKeyType=<error type>,
+            InValueType=FTextureRHIRef
+        ]
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): error C2660: “FSFVideoPipeline::CopyTexture”: 函数不接受 1 个参数
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(38,7): note: 参见“FSFVideoPipeline::CopyTexture”的声明
+	void CopyTexture(const FTextureRHIRef& SourceTexture, FTextureRHIRef& DestinationTexture) const;
+	     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: 尝试匹配参数列表“(const FTextureRHIRef)”时
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): error C2678: 二进制“->”: 没有找到接受“TUniquePtr”类型的左操作数的运算符(或没有可接受的转换)
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(300,39): note: 可能是“T *TUniquePtr<T,Deleter>::operator ->(void) const”
+	[[nodiscard]] UE_FORCEINLINE_HINT T* operator->() const
+	                                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: “T *TUniquePtr<T,Deleter>::operator ->(void) const”: 不能将“this”指针从“TUniquePtr”转换为“const TUniquePtr<T,Deleter> &”
+	SF_AV_ENC(
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: 原因如下: 无法从“TUniquePtr”转换为“const TUniquePtr<T,Deleter>”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: 转换要求第二个用户定义的转换运算符或构造函数
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): note: 尝试匹配参数列表“(TUniquePtr)”时
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(204,2): error C2039: "Encode": 不是 "TUniquePtr" 的成员
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\UniquePtr.h(106,7): note: 参见“TUniquePtr”的声明
+class TUniquePtr : private Deleter
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(219,66): error C2556: “TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe> FSFVideoPipeline::ObtainInputFrame(void)”: 重载函数与“TSharedPtr FSFVideoPipeline::ObtainInputFrame(void)”只是在返回类型上不同
+TSharedPtr<AVEncoder::FVideoEncoderInputFrame> FSFVideoPipeline::ObtainInputFrame()
+                                                                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,49): note: 参见“FSFVideoPipeline::ObtainInputFrame”的声明
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	                                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(219,66): error C2371: “FSFVideoPipeline::ObtainInputFrame”: 重定义；不同的基类型
+TSharedPtr<AVEncoder::FVideoEncoderInputFrame> FSFVideoPipeline::ObtainInputFrame()
+                                                                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(35,49): note: 参见“FSFVideoPipeline::ObtainInputFrame”的声明
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> ObtainInputFrame();
+	                                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(219,66): error C2079: “FSFVideoPipeline::ObtainInputFrame”使用未定义的 class“TSharedPtr”
+TSharedPtr<AVEncoder::FVideoEncoderInputFrame> FSFVideoPipeline::ObtainInputFrame()
+                                                                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(221,62): error C2678: 二进制“->”: 没有找到接受“TSharedPtr”类型的左操作数的运算符(或没有可接受的转换)
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> InputFrame = VideoEncoderInput->ObtainInputFrame();
+	                                                            ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(1110,35): note: 可能是“ObjectType *TSharedPtr<ObjectType,InMode>::operator ->(void) const”
+	[[nodiscard]] inline ObjectType* operator->() const
+	                                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(221,62): note: “ObjectType *TSharedPtr<ObjectType,InMode>::operator ->(void) const”: 不能将“this”指针从“TSharedPtr”转换为“const TSharedPtr<ObjectType,InMode> &”
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> InputFrame = VideoEncoderInput->ObtainInputFrame();
+	                                                            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(221,62): note: 原因如下: 无法从“TSharedPtr”转换为“const TSharedPtr<ObjectType,InMode>”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(221,62): note: 转换要求第二个用户定义的转换运算符或构造函数
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(221,62): note: 尝试匹配参数列表“(TSharedPtr)”时
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(221,81): error C2039: "ObtainInputFrame": 不是 "TSharedPtr" 的成员
+	TSharedPtr<AVEncoder::FVideoEncoderInputFrame> InputFrame = VideoEncoderInput->ObtainInputFrame();
+	                                                                               ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h(691,7): note: 参见“TSharedPtr”的声明
+class TSharedPtr
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(225,19): error C2664: “bool TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Contains(const int) const”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const int”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	if (!BackBuffers.Contains(InputFrame))
+	                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(225,28): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+	if (!BackBuffers.Contains(InputFrame))
+	                          ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(707,41): note: 参见“TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Contains”的声明
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	[[nodiscard]] UE_FORCEINLINE_HINT bool Contains(KeyConstPointerType Key) const
+	                                       ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(225,19): note: 尝试匹配参数列表“(TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>)”时
+	if (!BackBuffers.Contains(InputFrame))
+	                 ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,18): error C2665: “TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove”: 没有重载函数可以转换所有参数类型
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+					BackBuffers.Remove(RawFrame);
+					            ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(430,27): note: 可能是“void TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(FSetElementId)”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT void Remove(FSetElementId Id)
+	                         ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,18): note: “void TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(FSetElementId)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“FSetElementId”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+					BackBuffers.Remove(RawFrame);
+					            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,25): note: “FSetElementId::FSetElementId”: 没有重载函数可以转换所有参数类型
+					BackBuffers.Remove(RawFrame);
+					                   ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\SetUtilities.h(135,1): note: 可能是“FSetElementId::FSetElementId(FSetElementId &&)”
+};
+^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,25): note: “FSetElementId::FSetElementId(FSetElementId &&)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“FSetElementId &&”
+					BackBuffers.Remove(RawFrame);
+					                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,25): note: 原因如下: 无法从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“FSetElementId”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,25): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\SetUtilities.h(135,1): note: 或    “FSetElementId::FSetElementId(const FSetElementId &)”
+};
+^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,25): note: “FSetElementId::FSetElementId(const FSetElementId &)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“const FSetElementId &”
+					BackBuffers.Remove(RawFrame);
+					                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,25): note: 原因如下: 无法从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“const FSetElementId”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,25): note: 转换要求第二个用户定义的转换运算符或构造函数
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,25): note: 尝试匹配参数列表“(AVEncoder::FVideoEncoderInputFrame *const )”时
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(406,15): note: 或    “int32 TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(const int)”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	inline int32 Remove(KeyConstPointerType InKey)
+	             ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,18): note: “int32 TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(const int)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“const int”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+					BackBuffers.Remove(RawFrame);
+					            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,25): note: 没有使该转换得以执行的上下文
+					BackBuffers.Remove(RawFrame);
+					                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(242,18): note: 尝试匹配参数列表“(AVEncoder::FVideoEncoderInputFrame *const )”时
+					BackBuffers.Remove(RawFrame);
+					            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,16): error C2665: “TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add”: 没有重载函数可以转换所有参数类型
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(323,33): note: 可能是“ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,ValueType &&)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(		 KeyType&& InKey,		ValueType&& InValue) { return Emplace(MoveTempIfPossible(InKey), MoveTempIfPossible(InValue)); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,ValueType &&)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType &&”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(322,33): note: 或    “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,const ValueType &)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(		 KeyType&& InKey, const ValueType&  InValue) { return Emplace(MoveTempIfPossible(InKey), InValue); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,const ValueType &)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType &&”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(321,33): note: 或    “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,ValueType &&)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(const KeyType&  InKey,		ValueType&& InValue) { return Emplace(InKey, MoveTempIfPossible(InValue)); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,ValueType &&)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType &”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(320,33): note: 或    “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,const ValueType &)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(const KeyType&  InKey, const ValueType&  InValue) { return Emplace(InKey, InValue); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,const ValueType &)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType &”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(244,16): note: 尝试匹配参数列表“(TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>, FTextureRHIRef)”时
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,18): error C2665: “TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove”: 没有重载函数可以转换所有参数类型
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+					BackBuffers.Remove(RawFrame);
+					            ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(430,27): note: 可能是“void TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(FSetElementId)”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT void Remove(FSetElementId Id)
+	                         ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,18): note: “void TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(FSetElementId)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“FSetElementId”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+					BackBuffers.Remove(RawFrame);
+					            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,25): note: “FSetElementId::FSetElementId”: 没有重载函数可以转换所有参数类型
+					BackBuffers.Remove(RawFrame);
+					                   ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\SetUtilities.h(135,1): note: 可能是“FSetElementId::FSetElementId(FSetElementId &&)”
+};
+^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,25): note: “FSetElementId::FSetElementId(FSetElementId &&)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“FSetElementId &&”
+					BackBuffers.Remove(RawFrame);
+					                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,25): note: 原因如下: 无法从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“FSetElementId”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,25): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\SetUtilities.h(135,1): note: 或    “FSetElementId::FSetElementId(const FSetElementId &)”
+};
+^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,25): note: “FSetElementId::FSetElementId(const FSetElementId &)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“const FSetElementId &”
+					BackBuffers.Remove(RawFrame);
+					                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,25): note: 原因如下: 无法从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“const FSetElementId”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,25): note: 转换要求第二个用户定义的转换运算符或构造函数
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,25): note: 尝试匹配参数列表“(AVEncoder::FVideoEncoderInputFrame *const )”时
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(406,15): note: 或    “int32 TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(const int)”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	inline int32 Remove(KeyConstPointerType InKey)
+	             ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,18): note: “int32 TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(const int)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“const int”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+					BackBuffers.Remove(RawFrame);
+					            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,25): note: 没有使该转换得以执行的上下文
+					BackBuffers.Remove(RawFrame);
+					                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(252,18): note: 尝试匹配参数列表“(AVEncoder::FVideoEncoderInputFrame *const )”时
+					BackBuffers.Remove(RawFrame);
+					            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,16): error C2665: “TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add”: 没有重载函数可以转换所有参数类型
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(323,33): note: 可能是“ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,ValueType &&)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(		 KeyType&& InKey,		ValueType&& InValue) { return Emplace(MoveTempIfPossible(InKey), MoveTempIfPossible(InValue)); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,ValueType &&)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType &&”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(322,33): note: 或    “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,const ValueType &)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(		 KeyType&& InKey, const ValueType&  InValue) { return Emplace(MoveTempIfPossible(InKey), InValue); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,const ValueType &)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType &&”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(321,33): note: 或    “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,ValueType &&)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(const KeyType&  InKey,		ValueType&& InValue) { return Emplace(InKey, MoveTempIfPossible(InValue)); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,ValueType &&)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType &”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(320,33): note: 或    “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,const ValueType &)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(const KeyType&  InKey, const ValueType&  InValue) { return Emplace(InKey, InValue); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,const ValueType &)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType &”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(254,16): note: 尝试匹配参数列表“(TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>, FTextureRHIRef)”时
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,18): error C2665: “TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove”: 没有重载函数可以转换所有参数类型
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+					BackBuffers.Remove(RawFrame);
+					            ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(430,27): note: 可能是“void TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(FSetElementId)”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT void Remove(FSetElementId Id)
+	                         ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,18): note: “void TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(FSetElementId)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“FSetElementId”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+					BackBuffers.Remove(RawFrame);
+					            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,25): note: “FSetElementId::FSetElementId”: 没有重载函数可以转换所有参数类型
+					BackBuffers.Remove(RawFrame);
+					                   ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\SetUtilities.h(135,1): note: 可能是“FSetElementId::FSetElementId(FSetElementId &&)”
+};
+^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,25): note: “FSetElementId::FSetElementId(FSetElementId &&)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“FSetElementId &&”
+					BackBuffers.Remove(RawFrame);
+					                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,25): note: 原因如下: 无法从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“FSetElementId”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,25): note: 转换要求第二个用户定义的转换运算符或构造函数
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\SetUtilities.h(135,1): note: 或    “FSetElementId::FSetElementId(const FSetElementId &)”
+};
+^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,25): note: “FSetElementId::FSetElementId(const FSetElementId &)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“const FSetElementId &”
+					BackBuffers.Remove(RawFrame);
+					                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,25): note: 原因如下: 无法从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“const FSetElementId”
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,25): note: 转换要求第二个用户定义的转换运算符或构造函数
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,25): note: 尝试匹配参数列表“(AVEncoder::FVideoEncoderInputFrame *const )”时
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(406,15): note: 或    “int32 TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(const int)”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	inline int32 Remove(KeyConstPointerType InKey)
+	             ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,18): note: “int32 TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Remove(const int)”: 无法将参数 1 从“AVEncoder::FVideoEncoderInputFrame *const ”转换为“const int”
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+					BackBuffers.Remove(RawFrame);
+					            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,25): note: 没有使该转换得以执行的上下文
+					BackBuffers.Remove(RawFrame);
+					                   ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(262,18): note: 尝试匹配参数列表“(AVEncoder::FVideoEncoderInputFrame *const )”时
+					BackBuffers.Remove(RawFrame);
+					            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,16): error C2665: “TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add”: 没有重载函数可以转换所有参数类型
+        with
+        [
+            KeyType=<error type>,
+            ValueType=FTextureRHIRef,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(323,33): note: 可能是“ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,ValueType &&)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(		 KeyType&& InKey,		ValueType&& InValue) { return Emplace(MoveTempIfPossible(InKey), MoveTempIfPossible(InValue)); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,ValueType &&)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType &&”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(322,33): note: 或    “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,const ValueType &)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(		 KeyType&& InKey, const ValueType&  InValue) { return Emplace(MoveTempIfPossible(InKey), InValue); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(KeyType &&,const ValueType &)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType &&”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(321,33): note: 或    “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,ValueType &&)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(const KeyType&  InKey,		ValueType&& InValue) { return Emplace(InKey, MoveTempIfPossible(InValue)); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,ValueType &&)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType &”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Containers\Map.h.inl(320,33): note: 或    “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,const ValueType &)”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+	UE_FORCEINLINE_HINT ValueType& Add(const KeyType&  InKey, const ValueType&  InValue) { return Emplace(InKey, InValue); }
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,16): note: “ValueType &TMapBase<KeyType,ValueType,SetAllocator,KeyFuncs>::Add(const KeyType &,const ValueType &)”: 无法将参数 1 从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType &”
+        with
+        [
+            ValueType=FTextureRHIRef,
+            KeyType=<error type>,
+            SetAllocator=FDefaultSetAllocator,
+            KeyFuncs=TDefaultMapHashableKeyFuncs<<error type>,FTextureRHIRef,false>
+        ]
+        and
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,20): note: 原因如下: 无法从“TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>”转换为“const KeyType”
+        with
+        [
+            KeyType=<error type>
+        ]
+			BackBuffers.Add(InputFrame, Texture);
+			                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,20): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(264,16): note: 尝试匹配参数列表“(TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>, FTextureRHIRef)”时
+			BackBuffers.Add(InputFrame, Texture);
+			            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(276,87): warning C4996: 'AVEncoder::FVideoEncoderInputFrame': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+void FSFVideoPipeline::OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+                                                                                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(276,136): warning C4996: 'AVEncoder::FCodecPacket': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+void FSFVideoPipeline::OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+                                                                                                                                       ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(276,119): warning C4996: 'AVEncoder::FCodecPacket': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+void FSFVideoPipeline::OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+                                                                                                                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(276,24): error C2511: “void FSFVideoPipeline::OnEncodedPacket(uint32,const TSharedPtr<AVEncoder::FVideoEncoderInputFrame,ESPMode::ThreadSafe>,const AVEncoder::FCodecPacket &)”:“FSFVideoPipeline”中没有找到重载的成员函数
+void FSFVideoPipeline::OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+                       ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(16,7): note: 参见“FSFVideoPipeline”的声明
+class FSFVideoPipeline : public TSharedFromThis<FSFVideoPipeline>
+      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(278,13): warning C4996: 'AVEncoder::FCodecPacket::Data': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	if (!Packet.Data || Packet.DataSize == 0 || !Pusher)
+	           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(278,47): error C2597: 对非静态成员“FSFVideoPipeline::Pusher”的非法引用
+	if (!Packet.Data || Packet.DataSize == 0 || !Pusher)
+	                                             ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(43,17): note: 参见“FSFVideoPipeline::Pusher”的声明
+	FSFRtmpPusher* Pusher = nullptr;
+	               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(288,25): warning C4996: 'AVEncoder::FCodecPacket::Data': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	TagBuilder.Build(Packet.Data.Get(), Packet.DataSize, Packet.IsKeyFrame, Tag, bSentSeq);
+	                       ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(290,72): error C2597: 对非静态成员“FSFVideoPipeline::NumEncodedFrames”的非法引用
+	const uint32 TsMs = (uint32)(Frame ? Frame->GetTimestampUs() / 1000 : NumEncodedFrames * 1000 / Settings.Fps);
+	                                                                      ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(290,72): note: 参见“FSFVideoPipeline::NumEncodedFrames”的声明
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(290,72): error C3867: “FSFVideoPipeline::NumEncodedFrames”: 非标准语法；请使用 "&" 来创建指向成员的指针
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(290,72): error C2568: “*”: 无法解析函数重载
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(290,15): error C2737: “TsMs”: 必须初始化 const 对象
+	const uint32 TsMs = (uint32)(Frame ? Frame->GetTimestampUs() / 1000 : NumEncodedFrames * 1000 / Settings.Fps);
+	             ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(299,51): warning C4996: 'AVEncoder::FCodecPacket::IsKeyFrame': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+		Pusher->EnqueueVideo(MoveTemp(Tag), TsMs, Packet.IsKeyFrame);
+		                                                ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(302,2): error C2597: 对非静态成员“FSFVideoPipeline::NumEncodedFrames”的非法引用
+	NumEncodedFrames++;
+	^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(302,2): note: 参见“FSFVideoPipeline::NumEncodedFrames”的声明
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(302,2): error C3867: “FSFVideoPipeline::NumEncodedFrames”: 非标准语法；请使用 "&" 来创建指向成员的指针
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(302,2): error C2568: “++”: 无法解析函数重载
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(306,12): error C2597: 对非静态成员“FSFVideoPipeline::LastStatsTime”的非法引用
+	if (Now - LastStatsTime >= 1.0 && Stats)
+	          ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(306,12): note: 参见“FSFVideoPipeline::LastStatsTime”的声明
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(306,12): error C3867: “FSFVideoPipeline::LastStatsTime”: 非标准语法；请使用 "&" 来创建指向成员的指针
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(306,12): error C2568: “-”: 无法解析函数重载
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(308,31): error C2597: 对非静态成员“FSFVideoPipeline::NumEncodedFrames”的非法引用
+		Stats->EncodedFps = (int32)(NumEncodedFrames - LastStatsFrameCount);
+		                            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(308,31): note: 参见“FSFVideoPipeline::NumEncodedFrames”的声明
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(308,31): error C3867: “FSFVideoPipeline::NumEncodedFrames”: 非标准语法；请使用 "&" 来创建指向成员的指针
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(308,31): fatal error C1003: 错误计数超过 100；正在停止编译
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 3848 C:\ProgramData\Epic\UnrealBuildAccelerator\memgroups (Access is denied.)
+SetFileInformationByHandle (FileDispositionInfo) failed on 3824 C:/Users/Administrator/AppData/Local/UnrealBuildTool/Log.uba (Access is denied.)
+Total time in Unreal Build Accelerator local executor: 4.06 seconds
+
+Result: Failed (OtherCompilationError)
+Total execution time: 4.91 seconds

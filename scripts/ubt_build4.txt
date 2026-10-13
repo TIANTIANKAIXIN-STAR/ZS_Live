@@ -1,0 +1,6 @@
+﻿				                   ^
+Total time in Parallel executor: 1.96 seconds
+
+Result: Failed (OtherCompilationError)
+Total execution time: 3.27 seconds
+

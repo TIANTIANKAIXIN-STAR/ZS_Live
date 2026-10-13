@@ -1,0 +1,41 @@
+Using bundled DotNet SDK version: 8.0.412 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UEtestEditor Win64 Development -Project=F:/streamming/ZS_Live/UETest/UEtest/UEtest.uproject -WaitMutex -NoUBA
+Log file: C:\Users\Administrator\AppData\Local\UnrealBuildTool\Log.txt
+Building UEtestEditor...
+Using Visual Studio 2022 14.44.35227 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from StreamForge unity file: SFAmf0.cpp, SFAudioPipeline.cpp, SFControlChannel.cpp, SFMediaFormat.cpp, SFRtmpPusher.cpp, SFVideoPipeline.cpp, StreamForgeModule.cpp, StreamForgeSubsystem.cpp
+Determining max actions to execute in parallel (20 physical cores, 28 logical cores)
+  Executing up to 20 processes, one per physical core
+Using Parallel executor to run 7 action(s)
+------ Building 7 action(s) started ------
+[1/7] Compile [x64] SFRtmpPusher.cpp
+[2/7] Compile [x64] SFAudioPipeline.cpp
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.h(19,22): warning C4996: 'AVEncoder::IAudioEncoderListener': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	, public AVEncoder::IAudioEncoderListener
+	                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.cpp(233,61): warning C4996: 'AVEncoder::FMediaPacket': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+void FSFAudioPipeline::OnEncodedAudioFrame(const AVEncoder::FMediaPacket& Packet)
+                                                            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.cpp(233,44): warning C4996: 'AVEncoder::FMediaPacket': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+void FSFAudioPipeline::OnEncodedAudioFrame(const AVEncoder::FMediaPacket& Packet)
+                                           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.cpp(235,23): warning C4996: 'AVEncoder::FMediaPacket::Data': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	if (!Pusher || Packet.Data.Num() == 0)
+	                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.cpp(241,33): warning C4996: 'AVEncoder::FMediaPacket::Data': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	AudioTagBuilder.BuildAac(Packet.Data.GetData(), Packet.Data.Num(), Tag, bSentSeq);
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.cpp(242,37): warning C4996: 'AVEncoder::FMediaPacket::Timestamp': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	const uint32 TsMs = (uint32)(Packet.Timestamp.GetTicks() / 10000); // ticks are 100ns
+	                                   ^
+[3/7] Compile [x64] StreamForgeModule.cpp
+[4/7] Compile [x64] SFVideoPipeline.cpp
+[5/7] Link [x64] UnrealEditor-StreamForge.lib
+  正在创建库 F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/UnrealEditor-StreamForge.lib 和对象 F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/UnrealEditor-StreamForge.exp
+[6/7] Link [x64] UnrealEditor-StreamForge.dll
+[7/7] WriteMetadata UEtestEditor.target
+
+Total time in Parallel executor: 5.63 seconds
+
+Result: Succeeded
+Total execution time: 6.84 seconds

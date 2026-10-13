@@ -1,0 +1,66 @@
+# ===== WorkBuddy 内部（含项目记忆/诊断/密钥，绝不公开） =====
+.workbuddy/
+
+# ===== Node / 依赖 =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== 运行时数据 / 密钥（切勿提交） =====
+server/data/
+server/.edge-profile/
+.env
+.env.*
+*.local
+
+# ===== 浏览器测试缓存 / 测试截图（非源码，不入库） =====
+**/*.png
+
+# ===== 日志 =====
+*.log
+logs/
+
+# ===== 临时探测文件（开发调试用，非业务） =====
+_tmp_probe/
+_tmp_*/
+
+# ===== Unreal Engine 构建产物（递归排除，源码 Source/ 仍保留） =====
+**/Binaries/
+**/Intermediate/
+**/Saved/
+**/DerivedDataCache/
+**/.vs/
+*.sln
+*.suo
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# ===== UE 打包副本（体积大，不公开） =====
+**/Package/
+**/Windows/
+dist/stage/
+
+# ===== .NET (C# launcher) 构建产物 / 备份（非源码，不入库） =====
+**/obj/
+**/bin/
+*.bak
+*.bak-*
+
+# ===== 二进制 / 打包产物（按扩展名兜底） =====
+*.exe
+*.dll
+*.pdb
+*.sym
+*.so
+*.dylib
+*.zip
+
+# ===== 第三方工具（通过安装脚本获取，不入库） =====
+ffmpeg/
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+ehthumbs.db

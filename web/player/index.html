@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZS Live - UE 云渲染</title>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d;
+    --text: #e6edf3; --muted: #8b949e; --accent: #2f81f7; --ok: #3fb950; --warn: #d29922; --err: #f85149;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; background: var(--bg); color: var(--text); font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; overflow: hidden; }
+  #stage { position: relative; width: 100vw; height: 100vh; }
+  video { width: 100%; height: 100%; object-fit: contain; background: #000; }
+  /* 注意：不要对 video 设置 cursor:none。离屏渲染下游戏画面里没有系统光标，
+     本地光标是用户唯一可见的指针，隐藏后用户会完全看不到鼠标。 */
+
+  /* 状态遮罩 */
+  .overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; background: rgba(13,17,23,.92); z-index: 10; }
+  .overlay.hidden { display: none; }
+  .spinner { width: 42px; height: 42px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .overlay h2 { font-size: 18px; font-weight: 500; }
+  .overlay .sub { color: var(--muted); font-size: 13px; }
+  .overlay.err .spinner { display: none; }
+  .overlay.err h2 { color: var(--err); }
+
+  /* 顶栏 */
+  #topbar { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 12px;
+    padding: 10px 16px; background: linear-gradient(rgba(0,0,0,.55), transparent); z-index: 5;
+    opacity: 0; transition: opacity .25s; }
+  #stage:hover #topbar { opacity: 1; }
+  #topbar .title { font-size: 14px; font-weight: 600; }
+  #topbar .tag { font-size: 11px; padding: 2px 8px; border-radius: 10px; background: rgba(47,129,247,.2); color: var(--accent); }
+  #topbar .tag.ok { background: rgba(63,185,80,.2); color: var(--ok); }
+  #topbar .tag.warn { background: rgba(210,153,34,.2); color: var(--warn); }
+  #topbar .spacer { flex: 1; }
+  #topbar button { background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 6px 12px; cursor: pointer; font-size: 12px; }
+  #topbar button:hover { border-color: var(--accent); }
+
+  /* 统计角标 */
+  #stats { position: absolute; right: 10px; bottom: 10px; font-size: 11px; color: var(--muted);
+    background: rgba(13,17,23,.75); border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px;
+    font-family: Consolas, monospace; display: none; z-index: 5; }
+  #stage.showstats #stats { display: block; }
+
+  .bar { width: 260px; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
+  .bar > i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <video id="video" autoplay playsinline muted></video>
+
+  <div id="topbar">
+    <span class="title">ZS Live</span>
+    <span class="tag" id="stateTag">连接中</span>
+    <span class="spacer"></span>
+    <button id="btnStats">统计</button>
+    <button id="btnSound">开启声音</button>
+    <button id="btnFull">全屏</button>
+    <button id="btnEnd">结束会话</button>
+  </div>
+
+  <div id="stats">--</div>
+
+  <div class="overlay" id="overlay">
+    <div class="spinner"></div>
+    <h2 id="ovTitle">正在请求实例…</h2>
+    <div class="sub" id="ovSub"></div>
+    <div class="bar" id="ovBar" style="display:none"><i></i></div>
+  </div>
+</div>
+
+<script src="/player/player.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+Using bundled DotNet SDK version: 8.0.412 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UEtest Win64 Development -Project=F:/streamming/ZS_Live/UETest/UEtest/UEtest.uproject -WaitMutex -NoUBA
+Log file: C:\Users\Administrator\AppData\Local\UnrealBuildTool\Log.txt
+Parsing headers for UEtest
+  Running Internal UnrealHeaderTool F:\streamming\ZS_Live\UETest\UEtest\UEtest.uproject F:\streamming\ZS_Live\UETest\UEtest\Intermediate\Build\Win64\UEtest\Development\UEtest.uhtmanifest -WarningsAsErrors -installed
+UHT processed UEtest in 0.9873013 seconds (0 files written)
+Building UEtest...
+Using Visual Studio 2022 14.44.35227 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from StreamForge unity file: SFAmf0.cpp, SFAudioPipeline.cpp, SFControlChannel.cpp, SFMediaFormat.cpp, SFRtmpPusher.cpp, SFVideoPipeline.cpp, StreamForgeModule.cpp, StreamForgeSubsystem.cpp
+Determining max actions to execute in parallel (20 physical cores, 28 logical cores)
+  Executing up to 20 processes, one per physical core
+Using Parallel executor to run 2 action(s)
+------ Building 2 action(s) started ------
+[1/2] Link [x64] UEtest.exe
+  正在创建库 F:\streamming\ZS_Live\UETest\UEtest\Binaries\Win64\UEtest.lib 和对象 F:\streamming\ZS_Live\UETest\UEtest\Binaries\Win64\UEtest.exp
+[2/2] WriteMetadata UEtest.target
+
+Total time in Parallel executor: 11.23 seconds
+
+Result: Succeeded
+Total execution time: 13.31 seconds

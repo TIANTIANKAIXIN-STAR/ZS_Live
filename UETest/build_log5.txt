@@ -1,0 +1,55 @@
+Using bundled DotNet SDK version: 8.0.412 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UEtestEditor Win64 Development -Project=F://streamming//ZS_Live//UETest//UEtest//UEtest.uproject -WaitMutex
+Log file: C:\Users\Administrator\AppData\Local\UnrealBuildTool\Log.txt
+Building UEtestEditor...
+Using Visual Studio 2022 14.44.35227 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from StreamForge unity file: SFAmf0.cpp, SFAudioPipeline.cpp, SFControlChannel.cpp, SFMediaFormat.cpp, SFRtmpPusher.cpp, SFVideoPipeline.cpp, StreamForgeModule.cpp, StreamForgeSubsystem.cpp
+Determining max actions to execute in parallel (20 physical cores, 28 logical cores)
+  Executing up to 20 processes, one per physical core
+Using Unreal Build Accelerator local executor to run 5 action(s)
+  Storage capacity 40Gb
+---- Starting trace: 260904_091342 ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 3964 F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Intermediate\Build\Win64\x64\UnrealEditor\Development\StreamForge\StreamForgeModule.cpp.dep.json (Access is denied.)
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 3600 F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Intermediate\Build\Win64\x64\UnrealEditor\Development\StreamForge\StreamForgeModule.cpp.sarif (Access is denied.)
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 3976 F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Intermediate\Build\Win64\x64\UnrealEditor\Development\StreamForge\StreamForgeModule.cpp.obj (Access is denied.)
+Compile [x64] StreamForgeModule.cpp: Exited with error code 9001. This action will retry without UBA
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 3144 F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Intermediate\Build\Win64\x64\UnrealEditor\Development\StreamForge\SFAudioPipeline.cpp.obj (Access is denied.)
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 3748 F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Intermediate\Build\Win64\x64\UnrealEditor\Development\StreamForge\SFAudioPipeline.cpp.dep.json (Access is denied.)
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 3760 F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Intermediate\Build\Win64\x64\UnrealEditor\Development\StreamForge\SFAudioPipeline.cpp.sarif (Access is denied.)
+Compile [x64] SFAudioPipeline.cpp: Exited with error code 9001. This action will retry without UBA
+[1/5] Compile [x64] StreamForgeModule.cpp [NoUba]
+[2/5] Compile [x64] SFAudioPipeline.cpp [NoUba]
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.h(19,22): warning C4996: 'AVEncoder::IAudioEncoderListener': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	, public AVEncoder::IAudioEncoderListener
+	                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.cpp(233,61): warning C4996: 'AVEncoder::FMediaPacket': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+void FSFAudioPipeline::OnEncodedAudioFrame(const AVEncoder::FMediaPacket& Packet)
+                                                            ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.cpp(233,44): warning C4996: 'AVEncoder::FMediaPacket': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+void FSFAudioPipeline::OnEncodedAudioFrame(const AVEncoder::FMediaPacket& Packet)
+                                           ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.cpp(235,23): warning C4996: 'AVEncoder::FMediaPacket::Data': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	if (!Pusher || Packet.Data.Num() == 0)
+	                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.cpp(241,33): warning C4996: 'AVEncoder::FMediaPacket::Data': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	AudioTagBuilder.BuildAac(Packet.Data.GetData(), Packet.Data.Num(), Tag, bSentSeq);
+	                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFAudioPipeline.cpp(242,37): warning C4996: 'AVEncoder::FMediaPacket::Timestamp': AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+	const uint32 TsMs = (uint32)(Packet.Timestamp.GetTicks() / 10000); // ticks are 100ns
+	                                   ^
+[3/5] Link [x64] UnrealEditor-StreamForge.dll
+LINK : fatal error LNK1201: 写入程序数据库“F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Binaries\Win64\UnrealEditor-StreamForge.pdb”时出错；请检查是否是磁盘空间不足、路径无效或权限不够
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 4260 F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Intermediate\Build\Win64\x64\UnrealEditor\Development\StreamForge\UnrealEditor-StreamForge.lib (Access is denied.)
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 4160 F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Intermediate\Build\Win64\x64\UnrealEditor\Development\StreamForge\UnrealEditor-StreamForge.exp (Access is denied.)
+Link [x64] UnrealEditor-StreamForge.lib: Exited with error code 9001. This action will retry without UBA
+[4/5] Link [x64] UnrealEditor-StreamForge.lib [NoUba]
+StreamForgeModule.cpp.obj : warning LNK4006: "struct FLogCategoryLogStreamForge LogStreamForge" (?LogStreamForge@@3UFLogCategoryLogStreamForge@@A) ???? SFMediaFormat.cpp.obj ?????￥?????????????????￥
+  ?????????￢ F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/UnrealEditor-StreamForge.lib ?????? F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/UnrealEditor-StreamForge.exp
+F:/streamming/ZS_Live/UETest/UEtest/Plugins/StreamForge/Intermediate/Build/Win64/x64/UnrealEditor/Development/StreamForge/UnrealEditor-StreamForge.lib : fatal error LNK1136: ????????????????
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 3436 C:\ProgramData\Epic\UnrealBuildAccelerator\memgroups (Access is denied.)
+SetFileInformationByHandle (FileDispositionInfo) failed on 4016 C:/Users/Administrator/AppData/Local/UnrealBuildTool/Log.uba (Access is denied.)
+Total time in Unreal Build Accelerator local executor: 12.98 seconds
+
+Result: Failed (OtherCompilationError)
+Total execution time: 13.92 seconds

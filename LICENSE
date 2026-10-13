@@ -1,0 +1,48 @@
+ZS_Live 源代码可见许可 (Source-Available License)
+=================================================
+
+注意：本仓库为「源代码可见」(Source-Available)，并非「开源」(Open Source)。
+本文件授予的是有限的查看与评估权利，不授予任何 OSI 开源许可证下的权利。
+版权所有 © 2026 Liu Huaxi (刘华西)。保留一切权利。
+
+--- English ---
+
+ZS_Live Source-Available License
+Copyright (c) 2026 Liu Huaxi (刘华西). All rights reserved.
+
+1. GRANT. You may view, study, and evaluate the source code for
+   personal, educational, and internal evaluation purposes only.
+
+2. RESTRICTIONS. You may NOT:
+   (a) use the Software for any commercial purpose;
+   (b) deploy, host, operate, or make the Software available to
+       provide a service to any third party;
+   (c) redistribute, sublicense, sell, or otherwise make the
+       Software available to others;
+   (d) remove or alter any copyright, trademark, or proprietary
+       notices contained in the Software.
+
+3. NO OPEN SOURCE RIGHTS. This is NOT an open-source license. No
+   rights under any OSI-approved license (including GPL, LGPL, MIT,
+   Apache, or BSD) are granted. The Software is provided under a
+   source-available model for inspection and evaluation only.
+
+4. TRADEMARKS. "ZS_Live" and all related logos, product names, and
+   marks are the exclusive property of Liu Huaxi and may not be used
+   without prior written permission.
+
+5. THIRD-PARTY COMPONENTS. The StreamForge Unreal Engine plugin
+   distributed within this repository is additionally subject to the
+   Unreal Engine End User License Agreement (EULA). No Unreal Engine
+   proprietary or modified engine code is included.
+
+6. NO WARRANTY. The Software is provided "AS IS", without warranty
+   of any kind, express or implied, including but not limited to
+   warranties of merchantability or fitness for a particular purpose.
+
+7. TERMINATION. Any breach of this license automatically terminates
+   the rights granted herein. Upon termination you must cease all use
+   and destroy all copies of the Software in your possession.
+
+8. ENTIRE AGREEMENT. This license constitutes the entire agreement
+   between you and Liu Huaxi regarding the Software.

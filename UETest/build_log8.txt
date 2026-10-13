@@ -1,0 +1,25 @@
+Using bundled DotNet SDK version: 8.0.412 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UEtestEditor Win64 Development -Project=F://streamming//ZS_Live//UETest//UEtest//UEtest.uproject -WaitMutex -NoUBA
+Log file: C:\Users\Administrator\AppData\Local\UnrealBuildTool\Log.txt
+Building UEtestEditor...
+Using Visual Studio 2022 14.44.35227 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from StreamForge unity file: SFAmf0.cpp, SFAudioPipeline.cpp, SFControlChannel.cpp, SFMediaFormat.cpp, SFRtmpPusher.cpp, SFVideoPipeline.cpp, StreamForgeModule.cpp, StreamForgeSubsystem.cpp
+Determining max actions to execute in parallel (20 physical cores, 28 logical cores)
+  Executing up to 20 processes, one per physical core
+Using Parallel executor to run 2 action(s)
+------ Building 2 action(s) started ------
+[1/2] Link [x64] UnrealEditor-StreamForge.dll
+StreamForgeModule.cpp.obj : error LNK2005: "struct FLogCategoryLogStreamForge LogStreamForge" (?LogStreamForge@@3UFLogCategoryLogStreamForge@@A) 已经在 SFMediaFormat.cpp.obj 中定义
+SFRtmpPusher.cpp.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: static class ISocketSubsystem * __cdecl ISocketSubsystem::Get(class FName const &)" (__imp_?Get@ISocketSubsystem@@SAPEAV1@AEBVFName@@@Z)，函数 "public: virtual __cdecl FSFRtmpPusher::~FSFRtmpPusher(void)" (??1FSFRtmpPusher@@UEAA@XZ) 中引用了该符号
+  已定义且可能匹配的符号上的提示:
+    "__declspec(dllimport) public: static wchar_t const * __cdecl FCommandLine::Get(void)" (__imp_?Get@FCommandLine@@SAPEB_WXZ)
+    "__declspec(dllimport) public: static class FModuleManager & __cdecl FModuleManager::Get(void)" (__imp_?Get@FModuleManager@@SAAEAV1@XZ)
+    "__declspec(dllimport) public: static class AVEncoder::FVideoEncoderFactory & __cdecl AVEncoder::FVideoEncoderFactory::Get(void)" (__imp_?Get@FVideoEncoderFactory@AVEncoder@@SAAEAV12@XZ)
+    "__declspec(dllimport) public: class UObject * __cdecl FWeakObjectPtr::Get(void)const " (__imp_?Get@FWeakObjectPtr@@QEBAPEAVUObject@@XZ)
+    "__declspec(dllimport) public: class UObject * __cdecl FWeakObjectPtr::Get(bool)const " (__imp_?Get@FWeakObjectPtr@@QEBAPEAVUObject@@_N@Z)
+    "__declspec(dllimport) public: static class FWebSocketsModule & __cdecl FWebSocketsModule::Get(void)" (__imp_?Get@FWebSocketsModule@@SAAEAV1@XZ)
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Binaries\Win64\UnrealEditor-StreamForge.dll : fatal error LNK1120: 1 个无法解析的外部命令
+Total time in Parallel executor: 2.15 seconds
+
+Result: Failed (OtherCompilationError)
+Total execution time: 2.95 seconds

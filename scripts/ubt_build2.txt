@@ -1,0 +1,7 @@
+﻿[3/3] WriteMetadata UEtest.target
+
+Total time in Parallel executor: 14.76 seconds
+
+Result: Succeeded
+Total execution time: 17.10 seconds
+

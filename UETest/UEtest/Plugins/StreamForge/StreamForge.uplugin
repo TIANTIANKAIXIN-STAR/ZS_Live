@@ -1,0 +1,19 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "StreamForge",
+	"Description": "Native RTMP streaming (no PixelStreaming dependency): backbuffer capture + hardware H264 encoding + RTMP push to MediaMTX, plus WebSocket control channel for remote input. Windows & Linux.",
+	"Category": "Streaming",
+	"CreatedBy": "ZS Live Platform",
+	"CanContainContent": false,
+	"Installed": false,
+	"SupportedTargetPlatforms": [ "Win64", "Linux" ],
+	"Modules": [
+		{
+			"Name": "StreamForge",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

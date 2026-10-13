@@ -1,0 +1,140 @@
+Using bundled DotNet SDK version: 8.0.412 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UEtest Linux Development -Project=F:/streamming/ZS_Live/UETest/UEtest/UEtest.uproject -WaitMutex -NoUBA
+Log file: C:\Users\Administrator\AppData\Local\UnrealBuildTool\Log.txt
+Creating makefile for UEtest (no existing makefile)
+Warning: Plugin 'StreamForge' does not list plugin 'HardwareEncoders' as a dependency, but module 'StreamForge' depends on module 'EncoderNVENC'.
+UHT compiled-in object format Default
+Parsing headers for UEtest
+  Running Internal UnrealHeaderTool F:\streamming\ZS_Live\UETest\UEtest\UEtest.uproject F:\streamming\ZS_Live\UETest\UEtest\Intermediate\Build\Linux\UEtest\Development\UEtest.uhtmanifest -WarningsAsErrors -installed
+UHT processed UEtest in 1.3121801 seconds (4 files written)
+------- Build details --------
+Using toolchain located at 'C:\UnrealToolchains\v26_clang-20.1.8-rockylinux8\x86_64-unknown-linux-gnu'.
+Using clang (C:\UnrealToolchains\v26_clang-20.1.8-rockylinux8\x86_64-unknown-linux-gnu\bin\clang++.exe) version 'clang version 20.1.8 (github.com/llvm/llvm-project 87f0227cb60147a26a1eeb4fb06e3b505e9c7261)
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:\UnrealToolchains\v26_clang-20.1.8-rockylinux8\x86_64-unknown-linux-gnu\bin' (string), 20 (major), 1 (minor), 8 (patch)
+Using bundled libc++ standard C++ library.
+Using lld linker
+Using llvm-ar (C:\UnrealToolchains\v26_clang-20.1.8-rockylinux8\x86_64-unknown-linux-gnu\bin\llvm-ar.exe) version 'LLVM (http://llvm.org/):
+  LLVM version 20.1.8
+  Optimized build. (string)'
+Compressing debug files
+Targeted minimum CPU architecture: None
+------------------------------
+Building UEtest...
+[Adaptive Build] Excluded from StreamForge unity file: SFAmf0.cpp, SFAudioPipeline.cpp, SFControlChannel.cpp, SFMediaFormat.cpp, SFRtmpPusher.cpp, SFVideoPipeline.cpp, StreamForgeModule.cpp, StreamForgeSubsystem.cpp
+Determining max actions to execute in parallel (20 physical cores, 28 logical cores)
+  Executing up to 20 processes, one per physical core
+Using Parallel executor to run 13 action(s)
+------ Building 13 action(s) started ------
+[1/13] Compile SharedPCH.Engine.Project.ValApi.ValExpApi.Cpp20.h
+[2/13] Compile UEtest.cpp
+[3/13] Compile StreamForgeSubsystem.cpp
+[4/13] Compile SFAmf0.cpp
+[5/13] Compile SFMediaFormat.cpp
+[6/13] Compile Module.StreamForge.cpp
+[7/13] Compile SFRtmpPusher.cpp
+[8/13] Compile SFAudioPipeline.cpp
+[9/13] Compile StreamForgeModule.cpp
+In file included from F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\StreamForgeModule.cpp:7:
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,70): warning: 'FVideoEncoderInputFrame' is deprecated: AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+   46 |     void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+      |                                                                         ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\AVEncoder\Public\VideoEncoderInput.h(133,8): note: 'FVideoEncoderInputFrame' has been explicitly marked deprecated here
+  133 |     class UE_DEPRECATED(5.4, "AVEncoder has been deprecated. Please use the AVCodecs plugin family instead.") FVideoEncoderInputFrame
+      |           ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Misc\CoreMiscDefines.h(302,44): note: expanded from macro 'UE_DEPRECATED'
+  302 |     #define UE_DEPRECATED(Version, Message) [[deprecated(Message " - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                               ^
+In file included from F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\StreamForgeModule.cpp:7:
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,119): warning: 'FCodecPacket' is deprecated: AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+   46 |     void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+      |                                                                                                                          ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\AVEncoder\Public\CodecPacket.h(12,8): note: 'FCodecPacket' has been explicitly marked deprecated here
+   12 |     class UE_DEPRECATED(5.4, "AVEncoder has been deprecated. Please use the AVCodecs plugin family instead.") FCodecPacket
+      |           ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Misc\CoreMiscDefines.h(302,44): note: expanded from macro 'UE_DEPRECATED'
+  302 |     #define UE_DEPRECATED(Version, Message) [[deprecated(Message " - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                               ^
+2 warnings generated.
+[10/13] Compile SFVideoPipeline.cpp
+In file included from F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp:3:
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,70): warning: 'FVideoEncoderInputFrame' is deprecated: AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+   46 |     void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+      |                                                                         ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\AVEncoder\Public\VideoEncoderInput.h(133,8): note: 'FVideoEncoderInputFrame' has been explicitly marked deprecated here
+  133 |     class UE_DEPRECATED(5.4, "AVEncoder has been deprecated. Please use the AVCodecs plugin family instead.") FVideoEncoderInputFrame
+      |           ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Misc\CoreMiscDefines.h(302,44): note: expanded from macro 'UE_DEPRECATED'
+  302 |     #define UE_DEPRECATED(Version, Message) [[deprecated(Message " - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                               ^
+In file included from F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp:3:
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.h(46,119): warning: 'FCodecPacket' is deprecated: AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+   46 |     void OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet);
+      |                                                                                                                          ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\AVEncoder\Public\CodecPacket.h(12,8): note: 'FCodecPacket' has been explicitly marked deprecated here
+   12 |     class UE_DEPRECATED(5.4, "AVEncoder has been deprecated. Please use the AVCodecs plugin family instead.") FCodecPacket
+      |           ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Misc\CoreMiscDefines.h(302,44): note: expanded from macro 'UE_DEPRECATED'
+  302 |     #define UE_DEPRECATED(Version, Message) [[deprecated(Message " - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(128,89): warning: 'FVideoEncoderInputFrame' is deprecated: AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  128 |     VideoEncoder->SetOnEncodedPacket([this](uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+      |                                                                                            ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\AVEncoder\Public\VideoEncoderInput.h(133,8): note: 'FVideoEncoderInputFrame' has been explicitly marked deprecated here
+  133 |     class UE_DEPRECATED(5.4, "AVEncoder has been deprecated. Please use the AVCodecs plugin family instead.") FVideoEncoderInputFrame
+      |           ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Misc\CoreMiscDefines.h(302,44): note: expanded from macro 'UE_DEPRECATED'
+  302 |     #define UE_DEPRECATED(Version, Message) [[deprecated(Message " - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(128,138): warning: 'FCodecPacket' is deprecated: AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  128 |     VideoEncoder->SetOnEncodedPacket([this](uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+      |                                                                                                                                             ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\AVEncoder\Public\CodecPacket.h(12,8): note: 'FCodecPacket' has been explicitly marked deprecated here
+   12 |     class UE_DEPRECATED(5.4, "AVEncoder has been deprecated. Please use the AVCodecs plugin family instead.") FCodecPacket
+      |           ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Misc\CoreMiscDefines.h(302,44): note: expanded from macro 'UE_DEPRECATED'
+  302 |     #define UE_DEPRECATED(Version, Message) [[deprecated(Message " - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(239,28): error: use of undeclared identifier 'ID3D11Texture2D'
+  239 |             InputFrame->SetTexture((ID3D11Texture2D*)Texture->GetNativeResource(),
+      |                                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(239,44): error: expected expression
+  239 |             InputFrame->SetTexture((ID3D11Texture2D*)Texture->GetNativeResource(),
+      |                                                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(240,24): error: unknown type name 'ID3D11Texture2D'
+  240 |                 [this, InputFrame](ID3D11Texture2D*)
+      |                                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(248,28): error: use of undeclared identifier 'ID3D12Resource'
+  248 |             InputFrame->SetTexture((ID3D12Resource*)Texture->GetNativeResource(),
+      |                                     ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(248,43): error: expected expression
+  248 |             InputFrame->SetTexture((ID3D12Resource*)Texture->GetNativeResource(),
+      |                                                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(249,24): error: unknown type name 'ID3D12Resource'
+  249 |                 [this, InputFrame](ID3D12Resource*)
+      |                                    ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(274,87): warning: 'FVideoEncoderInputFrame' is deprecated: AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  274 | void FSFVideoPipeline::OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+      |                                                                                       ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\AVEncoder\Public\VideoEncoderInput.h(133,8): note: 'FVideoEncoderInputFrame' has been explicitly marked deprecated here
+  133 |     class UE_DEPRECATED(5.4, "AVEncoder has been deprecated. Please use the AVCodecs plugin family instead.") FVideoEncoderInputFrame
+      |           ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Misc\CoreMiscDefines.h(302,44): note: expanded from macro 'UE_DEPRECATED'
+  302 |     #define UE_DEPRECATED(Version, Message) [[deprecated(Message " - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                               ^
+F:\streamming\ZS_Live\UETest\UEtest\Plugins\StreamForge\Source\StreamForge\Private\SFVideoPipeline.cpp(274,136): warning: 'FCodecPacket' is deprecated: AVEncoder has been deprecated. Please use the AVCodecs plugin family instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations]
+  274 | void FSFVideoPipeline::OnEncodedPacket(uint32 LayerIndex, const TSharedPtr<AVEncoder::FVideoEncoderInputFrame> Frame, const AVEncoder::FCodecPacket& Packet)
+      |                                                                                                                                        ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\AVEncoder\Public\CodecPacket.h(12,8): note: 'FCodecPacket' has been explicitly marked deprecated here
+   12 |     class UE_DEPRECATED(5.4, "AVEncoder has been deprecated. Please use the AVCodecs plugin family instead.") FCodecPacket
+      |           ^
+C:\Program Files\Epic Games\UE_5.7\Engine\Source\Runtime\Core\Public\Misc\CoreMiscDefines.h(302,44): note: expanded from macro 'UE_DEPRECATED'
+  302 |     #define UE_DEPRECATED(Version, Message) [[deprecated(Message " - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+      |                                               ^
+6 warnings and 6 errors generated.
+[11/13] Compile SFControlChannel.cpp
+Total time in Parallel executor: 39.99 seconds
+
+Result: Failed (OtherCompilationError)
+Total execution time: 47.52 seconds
