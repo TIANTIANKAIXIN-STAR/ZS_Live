@@ -10,6 +10,8 @@ yarn-error.log*
 # ===== 运行时数据 / 密钥（切勿提交） =====
 server/data/
 server/.edge-profile/
+server/license.key
+server/license.secret
 .env
 .env.*
 *.local

@@ -1,8 +1,0 @@
-Using bundled DotNet SDK version: 8.0.412 win-x64
-Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UEtest Win64 Development -Project=F://streamming//ZS_Live//UETest//UEtest//UEtest.uproject -WaitMutex -NoUBA
-Log file: C:\Users\Administrator\AppData\Local\UnrealBuildTool\Log.txt
-Creating makefile for UEtest (no existing makefile)
-Unable to find plugin 'WebSockets' (referenced via UEtest.uproject). Install it and try again, or remove it from the required plugin list.
-
-Result: Failed (OtherCompilationError)
-Total execution time: 0.87 seconds
