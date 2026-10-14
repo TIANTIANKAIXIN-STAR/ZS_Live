@@ -50,10 +50,13 @@ _tmp_*/
 **/Package/
 **/Windows/
 dist/stage/
+# 生成的源码交付产物（scripts/build_source_edition.js 产出，不入库；发布走 API 同步）
+dist/
 
 # ===== .NET (C# launcher) 构建产物 / 备份（非源码，不入库） =====
 **/obj/
 **/bin/
+**/publish/
 *.bak
 *.bak-*
 

@@ -1,9 +1,0 @@
-[0904/131919.716:ERROR:storage_reserve.cc(164)] Failed to open file to mark as storage reserve: F:\streamming\ZS_Live\server\.edge-profile\Default\Code Cache\js
-[0904/131947.501:INFO:media_internals.cc(729)] AddToMetadataStore 4
-[0904/131947.502:INFO:media_internals.cc(734)] AddToMetadataStore 0
-[0904/131947.502:INFO:media_internals.cc(743)] AddToMetadataStore event
-[0904/131947.502:INFO:media_internals.cc(743)] AddToMetadataStore kMediaAutoplayPolicy
-[0904/131947.502:INFO:media_internals.cc(743)] AddToMetadataStore autoplay_decision
-[0904/131947.502:INFO:media_internals.cc(743)] AddToMetadataStore event
-[0904/131947.502:INFO:media_internals.cc(743)] AddToMetadataStore event
-[0904/132654.950:INFO:media_internals.cc(743)] AddToMetadataStore event

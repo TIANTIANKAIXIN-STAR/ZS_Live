@@ -1,6 +1,0 @@
-﻿
-Total time in Parallel executor: 15.59 seconds
-
-Result: Succeeded
-Total execution time: 16.87 seconds
-
