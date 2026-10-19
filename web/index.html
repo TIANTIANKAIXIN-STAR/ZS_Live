@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZS Live - 程序列表</title>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d;
+    --text: #e6edf3; --muted: #8b949e; --accent: #2f81f7; --ok: #3fb950; --warn: #d29922; --err: #f85149;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; min-height: 100vh; }
+
+  header { display: flex; align-items: center; gap: 14px; padding: 22px 32px; border-bottom: 1px solid var(--border); }
+  header .logo { font-size: 20px; font-weight: 700; }
+  header .logo b { color: var(--accent); }
+  header .sub { color: var(--muted); font-size: 13px; }
+  header .spacer { flex: 1; }
+  header a.btn { background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 6px;
+    padding: 7px 14px; font-size: 13px; text-decoration: none; }
+  header a.btn:hover { border-color: var(--accent); }
+
+  main { max-width: 1200px; margin: 0 auto; padding: 28px 32px 60px; }
+  .summary { display: flex; gap: 18px; margin-bottom: 24px; flex-wrap: wrap; }
+  .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px 20px; min-width: 140px; }
+  .stat .n { font-size: 26px; font-weight: 700; }
+  .stat .l { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .stat .n.ok { color: var(--ok); } .stat .n.warn { color: var(--warn); }
+
+  h2.section { font-size: 15px; color: var(--muted); font-weight: 500; margin: 8px 0 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; }
+
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 20px;
+    display: flex; flex-direction: column; gap: 12px; transition: border-color .2s, transform .15s; }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card .head { display: flex; align-items: center; gap: 10px; }
+  .card .name { font-size: 16px; font-weight: 600; flex: 1; }
+  .badge { font-size: 11px; padding: 3px 10px; border-radius: 10px; white-space: nowrap; }
+  .badge.ok { background: rgba(63,185,80,.15); color: var(--ok); }
+  .badge.warn { background: rgba(210,153,34,.15); color: var(--warn); }
+  .badge.err { background: rgba(248,81,73,.15); color: var(--err); }
+  .card .desc { color: var(--muted); font-size: 13px; line-height: 1.6; min-height: 20px; }
+  .card .meta { display: flex; gap: 12px; font-size: 12px; color: var(--muted); font-family: Consolas, monospace; }
+  .card .meta .node { color: var(--accent); }
+  .card .pool { display: flex; gap: 14px; font-size: 12px; }
+  .card .pool span b { font-size: 15px; margin-right: 3px; }
+  .card .pool .r b { color: var(--ok); } .card .pool .u b { color: var(--accent); } .card .pool .s b { color: var(--warn); }
+  .card .actions { display: flex; gap: 10px; margin-top: 4px; }
+  .card .actions a, .card .actions button { flex: 1; text-align: center; padding: 9px 0; border-radius: 8px; font-size: 13px;
+    cursor: pointer; text-decoration: none; border: 1px solid var(--border); background: transparent; color: var(--text); }
+  .card .actions .primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .card .actions .primary:hover { filter: brightness(1.15); }
+  .card .actions button:hover { border-color: var(--accent); }
+
+  .empty { text-align: center; color: var(--muted); padding: 80px 0; }
+  .empty a { color: var(--accent); }
+
+  /* 集成弹层 */
+  .modal-mask { position: fixed; inset: 0; background: rgba(0,0,0,.6); display: none; align-items: center; justify-content: center; z-index: 50; }
+  .modal-mask.show { display: flex; }
+  .modal { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; width: 640px; max-width: 92vw;
+    max-height: 84vh; overflow: auto; padding: 24px; }
+  .modal h3 { font-size: 16px; margin-bottom: 14px; }
+  .modal .row { margin-bottom: 14px; }
+  .modal .row label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+  .modal .row .val { display: flex; gap: 8px; }
+  .modal input, .modal textarea { width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+    color: var(--text); padding: 8px 10px; font-size: 12px; font-family: Consolas, monospace; }
+  .modal textarea { height: 72px; resize: none; }
+  .modal .copy { background: var(--accent); color: #fff; border: 0; border-radius: 6px; padding: 0 14px; cursor: pointer; font-size: 12px; white-space: nowrap; }
+  .modal .close { float: right; background: none; border: 0; color: var(--muted); font-size: 20px; cursor: pointer; }
+  #toast { position: fixed; bottom: 26px; left: 50%; transform: translateX(-50%); background: var(--ok); color: #04140a;
+    padding: 8px 18px; border-radius: 8px; font-size: 13px; display: none; z-index: 99; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">ZS <b>Live</b></div>
+  <div class="sub">UE 云渲染推流平台 · WebRTC 低延迟</div>
+  <div class="spacer"></div>
+  <a class="btn" href="/integration-demo.html" target="_blank">嵌入集成 Demo</a>
+  <a class="btn" href="/admin" target="_blank">管理后台</a>
+</header>
+
+<main>
+  <div class="summary" id="summary"></div>
+  <h2 class="section">可推流程序（点击卡片进入）</h2>
+  <div class="grid" id="grid"></div>
+</main>
+
+<div class="modal-mask" id="modalMask">
+  <div class="modal">
+    <button class="close" onclick="closeModal()">×</button>
+    <h3 id="mTitle">嵌入集成</h3>
+    <div class="row"><label>嵌入页 URL（iframe src）</label>
+      <div class="val"><input id="mEmbed" readonly><button class="copy" onclick="copyId('mEmbed')">复制</button></div></div>
+    <div class="row"><label>iframe 代码</label>
+      <div class="val"><textarea id="mIframe" readonly></textarea><button class="copy" onclick="copyId('mIframe')">复制</button></div></div>
+    <div class="row"><label>父页面 SDK（script 标签引入，类平行云 gameAPI 调用方式）</label>
+      <div class="val"><input id="mSdk" readonly><button class="copy" onclick="copyId('mSdk')">复制</button></div></div>
+    <div class="row"><label>SDK 挂载示例</label>
+      <textarea id="mExample" readonly style="height:120px"></textarea></div>
+  </div>
+</div>
+<div id="toast"></div>
+
+<script>
+'use strict';
+const $ = (id) => document.getElementById(id);
+
+function toast(text) {
+  const el = $('toast');
+  el.textContent = text; el.style.display = 'block';
+  setTimeout(() => { el.style.display = 'none'; }, 1600);
+}
+function copyId(id) {
+  const el = $(id);
+  el.select();
+  navigator.clipboard.writeText(el.value).then(() => toast('已复制'));
+}
+function closeModal() { $('modalMask').classList.remove('show'); }
+$('modalMask').addEventListener('click', (e) => { if (e.target === $('modalMask')) closeModal(); });
+
+function showEmbed(p) {
+  $('mTitle').textContent = `嵌入集成 - ${p.name}`;
+  $('mEmbed').value = p.embed.embedUrl;
+  $('mIframe').value = p.embed.iframe.html;
+  $('mSdk').value = `<script src="${p.embed.parentSdkUrl}"><\/script>`;
+  $('mExample').value =
+`const stream = ZsLive.mount({
+  container: '#app',
+  baseUrl: '${p.embed.baseUrl}',
+  template: '${p.id}',
+  streamId: 'view-a',       // 同页多路时每路唯一
+});
+stream.on('inputready', () => stream.camera('config', { fov: 90 }));
+stream.on('error', (e) => console.error(e.code, e.message));`;
+  $('modalMask').classList.add('show');
+}
+
+function badgeOf(p) {
+  if (p.pool.ready > 0) return `<span class="badge ok">可立即进入</span>`;
+  if (p.pool.starting > 0) return `<span class="badge warn">实例启动中</span>`;
+  return `<span class="badge err">需排队/冷启动</span>`;
+}
+
+async function refresh() {
+  let d;
+  try {
+    const res = await fetch('/api/programs');
+    d = await res.json();
+  } catch { return; }
+  if (!d.ok) return;
+
+  const tot = d.programs.reduce((a, p) => ({
+    ready: a.ready + p.pool.ready, inUse: a.inUse + p.pool.inUse, starting: a.starting + p.pool.starting,
+  }), { ready: 0, inUse: 0, starting: 0 });
+
+  $('summary').innerHTML = `
+    <div class="stat"><div class="n">${d.programs.length}</div><div class="l">程序 / 模板</div></div>
+    <div class="stat"><div class="n ok">${tot.ready}</div><div class="l">空闲实例</div></div>
+    <div class="stat"><div class="n">${tot.inUse}</div><div class="l">使用中</div></div>
+    <div class="stat"><div class="n warn">${tot.starting}</div><div class="l">启动中</div></div>`;
+
+  if (!d.programs.length) {
+    $('grid').innerHTML = d.programsEmptyHint
+      ? `<div class="empty">${d.programsEmptyHint}</div>`
+      : `<div class="empty">尚未配置任何程序模板，请先到 <a href="/admin">管理后台</a> 添加实例模板。</div>`;
+    return;
+  }
+
+  $('grid').innerHTML = d.programs.map((p) => `
+    <div class="card">
+      <div class="head"><span class="name">${esc(p.name)}</span>${badgeOf(p)}</div>
+      <div class="desc">${esc(p.description || 'UE 云渲染场景')}</div>
+      <div class="meta"><span>${p.width}×${p.height}</span><span>${p.fps} fps</span><span>#${p.id}</span>${p.nodeId ? `<span class="node">${esc(p.nodeName || p.nodeId)}</span>` : ''}</div>
+      <div class="pool">
+        <span class="r"><b>${p.pool.ready}</b>空闲</span>
+        <span class="u"><b>${p.pool.inUse}</b>使用中</span>
+        <span class="s"><b>${p.pool.starting}</b>启动中</span>
+      </div>
+      <div class="actions">
+        <a class="primary" href="/player?template=${p.id}${p.nodeId ? `&node=${encodeURIComponent(p.nodeId)}` : ''}">进入体验</a>
+        <button onclick='showEmbed(${JSON.stringify(p).replace(/'/g, "&#39;")})'>嵌入集成</button>
+      </div>
+    </div>`).join('');
+}
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+refresh();
+setInterval(refresh, 2000);
+</script>
+</body>
+</html>
