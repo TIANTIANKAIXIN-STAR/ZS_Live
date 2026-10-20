@@ -181,3 +181,7 @@ A：ZS Live 是**双向实时**的——客户可以操控（漫游 / 点击 / �
 **ZS Live** · 云渲染实时串流平台 · © 2026 Liu Huaxi (刘华西) 保留所有权利
 
 </div>
+
+## 技术对比
+
+- [ZS_Live 与 Unreal 像素流送（Pixel Streaming）技术对比](docs/compare-pixelstreaming.md)
