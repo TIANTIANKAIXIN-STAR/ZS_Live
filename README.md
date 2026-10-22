@@ -185,3 +185,7 @@ A：ZS Live 是**双向实时**的——客户可以操控（漫游 / 点击 / �
 ## 技术对比
 
 - [ZS_Live 与 Unreal 像素流送（Pixel Streaming）技术对比](docs/compare-pixelstreaming.md)
+
+## 部署与前端嵌入
+
+- [Windows 部署与前端嵌入指南（部署 + 拉流播放 + UE 通信）](docs/Windows部署与前端嵌入指南.md)
